@@ -1,0 +1,575 @@
+<cahracters>
+    <character level="1">
+        <class>
+            <name>Barbarian</name>
+            <levels>1</levels>
+        </class>
+        <race>Human</race>
+        <ac>13</ac>
+        <hitpoints>15</hitpoints>
+        <proficiencies>
+            <armor>ligth, medium, shield</armor>
+            <weapon>martial, simple</weapon>
+            <tool>no</tool>
+            <saving_throw>str, con</saving_throw>
+            <skill>athletic, deception, insight, survival</skill>
+        </proficiencies>
+        <stats>
+            <str>16</str>
+            <dex>11</dex>
+            <con>16</con>
+            <int>10</int>
+            <wis>14</wis>
+            <cha>10</cha>
+        </stats>
+        <features>
+            <feature>Rage: In battle, you fight with primal ferocity. On your turn, you can enter a
+                rage as a bonus action.
+                While raging, you gain the following benefits if you aren’t wearing heavy armor:
+                -You have advantage on Strength checks and Strength saving throws.
+                -When you make a melee weapon attack using Strength, you gain a bonus to the damage
+                roll that increases as you gain levels as a barbarian, as shown in the Rage Damage
+                column of the Barbarian table.
+                -You have resistance to bludgeoning, piercing, and slashing damage.
+                If you are able to cast spells, you can’t cast them or concentrate on them while
+                raging.
+                Your rage lasts for 1 minute. It ends early if you are knocked unconscious or if
+                your turn ends and you haven’t attacked a hostile creature since your last turn or
+                taken damage since then. You can also end your rage on your turn as a bonus action.
+                Once you have raged the number of times shown for your barbarian level in the Rages
+                column of the Barbarian table, you must finish a long rest before you can rage
+                again.</feature>
+            <feature>Unarmored defense: While you are not wearing any armor, your Armor⁠ Class
+                equals 10
+                + your Dexterity modifier + your Constitution modifier. You can use a shield and
+                still
+                gain this benefit.</feature>
+        </features>
+        <inventory>
+            <item>Battleaxe</item>
+            <item>Handaxe</item>
+            <item>Explorer's Pack</item>
+            <item>Javelin</item>
+            <item>Backpack</item>
+            <item>Bedroll</item>
+            <item>Mess Kit</item>
+            <item>Tinderbox</item>
+            <item>Torch</item>
+            <item>Ration</item>
+            <item>Waterskin</item>
+            <item>Hempen Rope</item>
+        </inventory>
+        <img>images/barbarian.jpeg</img>
+    </character>
+    <character level="4">
+        <class>
+            <name>Warlock</name>
+            <levels>2</levels>
+        </class>
+        <class>
+            <name>Sorcerer</name>
+            <levels>2</levels>
+        </class>
+        <race>Tiefling</race>
+        <ac>13</ac>
+        <hitpoints>19</hitpoints>
+        <proficiencies>
+            <armor>ligth</armor>
+            <weapon>simple</weapon>
+            <tool>no</tool>
+            <saving_throw>wis, cha</saving_throw>
+            <skill>deception, insight, intimidation, religion</skill>
+        </proficiencies>
+        <spell_slot>
+            <lv1>5</lv1>
+            <lv2>0</lv2>
+            <lv3>0</lv3>
+            <lv4>0</lv4>
+            <lv5>0</lv5>
+            <lv6>0</lv6>
+            <lv7>0</lv7>
+            <lv8>0</lv8>
+            <lv9>0</lv9>
+        </spell_slot>
+        <stats>
+            <str>8</str>
+            <dex>15</dex>
+            <con>8</con>
+            <int>9</int>
+            <wis>15</wis>
+            <cha>17</cha>
+        </stats>
+        <features>
+            <feature>Dark One's Blessing: Starting at 1st level, when you reduce a hostile creature
+                to 0 hit points, you gain temporary hit points equal to your Charisma modifier +
+                your warlock level (minimum of 1).</feature>
+            <feature>Hellish Resistance: You have resistance to fire damage.</feature>
+            <feature>Darkvision: Thanks to your infernal heritage, you have superior vision in dark
+                and dim conditions. You can see in dim light within 60 feet of you as if it were
+                bright light, and in darkness as if it were dim light. You can't discern color in
+                darkness, only shades of gray.</feature>
+            <feature>Eldritch Invocations: In your study of occult lore, you have unearthed eldritch
+                invocations, fragments of forbidden knowledge that imbue you with an abiding magical
+                ability.
+                At 2nd level, you gain two eldritch invocations of your choice. Your invocation
+                options are detailed at the end of the class description. When you gain certain
+                warlock levels, you gain additional invocations of your choice, as shown in the
+                Invocations Known column of the Warlock table.
+                Additionally, when you gain a level in this class, you can choose one of the
+                invocations you know and replace it with another invocation that you could learn at
+                that level.</feature>
+            <feature>Eldritch Invocation: Agonizing Blast: When you cast eldritch blast, add your
+                Charisma modifier to the damage it deals on a hit.</feature>
+            <feature>Eldritch Invocation: Repelling Blast: When you hit a creature with eldritch
+                blast, you can push the creature up to 10 feet away from you in a straight line.</feature>
+            <feature>Sorcery Points: At 2nd level, you tap into a deep wellspring of magic within
+                yourself. This wellspring is represented by sorcery points, which allow you to
+                create a variety of magical effects.
+                You have 2 sorcery points, and you gain more as you reach higher levels, as shown in
+                the Sorcery Points column of the Sorcerer table. You can never have more sorcery
+                points than shown on the table for your level. You regain all spent sorcery points
+                when you finish a long rest.</feature>
+            <feature>Flexible Casting: You can use your sorcery points to gain additional spell
+                slots, or sacrifice spell slots to gain additional sorcery points. You learn other
+                ways to use your sorcery points as you reach higher levels.
+                Creating Spell Slots. You can transform unexpended sorcery points into one spell
+                slot as a bonus action on your turn. The Creating Spell Slots table shows the cost
+                of creating a spell slot of a given level. You can create spell slots no higher in
+                level than 5th.
+
+                A 1st level Spell Slot cost 2 Sorcery Points
+                A 2nd level Spell Slot cost 3 Sorcery Points
+                A 3rd level Spell Slot cost 5 Sorcery Points
+                A 4th level Spell Slot cost 6 Sorcery Points
+                A 5th level Spell Slot cost 7 Sorcery Points
+
+                Converting a Spell Slot to Sorcery Points. As a bonus action on your turn, you can
+                expend one spell slot and gain a number of sorcery points equal to the slot’s level.</feature>
+            <feature>Flexible Casting: You can use your sorcery points to gain additional spell
+                slots, or sacrifice spell slots to gain additional sorcery points. You learn other
+                ways to use your sorcery points as you reach higher levels.
+                Creating Spell Slots. You can transform unexpended sorcery points into one spell
+                slot as a bonus action on your turn. The Creating Spell Slots table shows the cost
+                of creating a spell slot of a given level. You can create spell slots no higher in
+                level than 5th.
+
+                A 1st level Spell Slot cost 2 Sorcery Points
+                A 2nd level Spell Slot cost 3 Sorcery Points
+                A 3rd level Spell Slot cost 5 Sorcery Points
+                A 4th level Spell Slot cost 6 Sorcery Points
+                A 5th level Spell Slot cost 7 Sorcery Points
+
+                Converting a Spell Slot to Sorcery Points. As a bonus action on your turn, you can
+                expend one spell slot and gain a number of sorcery points equal to the slot’s level.</feature>
+            <feature>Draconic Interactions: Whenever you make a Charisma check when interacting with
+                dragons, your proficiency bonus is doubled if it applies to the check.</feature>
+            <feature>Draconic Resiliance: As magic flows through your body, it causes physical
+                traits of your dragon ancestors to emerge. At 1st level, your hit point maximum
+                increases by 1 and increases by 1 again whenever you gain a level in this class.
+                Additionally, parts of your skin are covered by a thin sheen of dragon-like scales.
+                When you aren’t wearing armor, your AC equals 13 + your Dexterity modifier.</feature>
+            <feature>Dragon Ancestor - Copper: Your dragon ancestor type is copper. The associated
+                damage type is acid.</feature>
+            <feature>Infernal Legacy: You know the thaumaturgy cantrip. When you reach 3rd level,
+                you can cast the hellish rebuke spell as a 2nd-level spell once with this trait and
+                regain the ability to do so when you finish a long rest. Charisma is your
+                spellcasting ability for these spells.</feature>
+        </features>
+        <inventory>
+            <item>Prayer Boock</item>
+            <item>Arcane Focus</item>
+            <item>Holy Symbol</item>
+            <item>Stick of Incense</item>
+            <item>Vestments</item>
+            <item>Belt Pouch</item>
+            <item>Dagger</item>
+            <item>Dungeoneer's Pack</item>
+            <item>Leather Armor</item>
+            <item>Common clothes</item>
+            <item>Backpack</item>
+            <item>Crowbar</item>
+            <item>Hammer</item>
+            <item>Piton</item>
+            <item>Torch</item>
+            <item>Tinderbox</item>
+            <item>Rations</item>
+            <item>Waterskin</item>
+            <item>Hempen Rope</item>
+        </inventory>
+        <img>images/warlock.jpeg</img>
+    </character>
+    <character level="12">
+        <class>
+            <name>Figther</name>
+            <levels>12</levels>
+        </class>
+        <race>Githyanki</race>
+        <ac>16</ac>
+        <hitpoints>106</hitpoints>
+        <proficiencies>
+            <armor>ligth, medium, heavy, shield</armor>
+            <weapon>martial, simple</weapon>
+            <tool>no</tool>
+            <saving_throw>str, con</saving_throw>
+            <skill>athletic, insight, intimidation, perception</skill>
+        </proficiencies>
+        <stats>
+            <str>20</str>
+            <dex>12</dex>
+            <con>16</con>
+            <int>8</int>
+            <wis>14</wis>
+            <cha>8</cha>
+        </stats>
+        <features>
+            <feature>Second Wind: You have a limited well of stamina that you can draw on to protect
+                yourself from harm. On your turn, you can use a bonus action to regain hit points
+                equal to 1d10 + your fighter level. Once you use this feature, you must finish a
+                short or long rest before you can use it again.</feature>
+            <feature>Fighting Style: Great Weapon Fighting: When you roll a 1 or 2 on a damage die
+                for an attack you make with a melee weapon that you are wielding with two hands, you
+                can reroll the die and must use the new roll, even if the new roll is a 1 or a 2.
+                The weapon must have the two-handed or versatile property for you to gain this
+                benefit.</feature>
+            <feature>Military Rank: You have a military rank from your career as a soldier. Those
+                loyal to your former military organization still recognize your authority and
+                influence, and will address you with respect if they are of a lower rank. You can
+                invoke your rank to influence other soldiers and commandeer simple equipment or
+                horses for temporary use. You can also generally have access to friendly camps and
+                forts where your military rank is recognized</feature>
+            <feature>Action Surge: Starting at 2nd level, you can push yourself beyond your normal
+                limits for a moment. On your turn, you can take one additional action on top of your
+                regular action and a possible bonus action. Once you use this feature, you must
+                finish a short or long rest before you can use it again.</feature>
+            <feature>Extra Attack: Beginning at 5th level, you can attack twice, instead of once,
+                whenever you take the Attack action on your turn.</feature>
+            <feature>Indomitable: Beginning at 9th level, you can reroll a saving throw that you
+                fail. If you do so, you must use the new roll, and you can’t use this feature again
+                until you finish a long rest.</feature>
+            <feature>Extra Attack: Beginning at 11th level, you can attack three times, instead of
+                twice, whenever you take the Attack action on your turn.</feature>
+            <feature>Alert: You gain a +5 bonus to initiative and can't be Surprised.</feature>
+            <feature>Great Weapon Master: When an attack with a melee weapon lands a Critical Hit or
+                kills a creature, you can make another melee weapon attack as a Bonus action that
+                turn. When attacking with a Two-Handed or Versatile melee weapon (in both hands)
+                that you are Proficient with, Attack rolls take a -5 penalty, but their damage
+                increases by 10.</feature>
+            <feature>Combat Superiority: Gain 4 Superiority Dice (Subclass Feature) Choose 3
+                Manoeuvres (Subclass Feature). At level 7 you gain 1 aditional superiority dice and
+                2 manoeuvres. At level 12 you gain 2 aditionals manoeuvres</feature>
+            <feature>Improved Combat Superiority: The size of your Superiority Dice increases to
+                1d10</feature>
+            <feature>Githyanki psionic: at level 1, you can cast a invisible mage hand once per long
+                rest</feature>
+            <feature>Githyanki psionic(lv3): at level 3, you can cast jump once per day</feature>
+            <feature>Githyanki psionic(lv5): at level 5, you can cast misty step once per day</feature>
+        </features>
+        <inventory>
+            <item>Chain Mail</item>
+            <item>Greatsword</item>
+            <item>Light Crossbow (Two-Handed)</item>
+            <item>Crossbow bolts</item>
+            <item>Dungeoneer's Pack</item>
+            <item>Backpack</item>
+            <item>Crowbar</item>
+            <item>Hammer</item>
+            <item>Piton</item>
+            <item>Torch</item>
+            <item>Tinderbox</item>
+            <item>Rations</item>
+            <item>Waterskin</item>
+            <item>Hempen Rope</item>
+            <item>Badge With Your Rank</item>
+            <item>A Trophy Taken From A Fallen Enemy</item>
+        </inventory>
+        <img>images/fighter.jpeg</img>
+    </character>
+    <character level="5">
+        <class>
+            <name>Cleric</name>
+            <levels>5</levels>
+        </class>
+        <race>Half-elf</race>
+        <ac>18</ac>
+        <hitpoints>38</hitpoints>
+        <proficiencies>
+            <armor>ligth, medium, heavy, shield</armor>
+            <weapon>simple</weapon>
+            <tool>no</tool>
+            <saving_throw>wis, cha</saving_throw>
+            <skill>history, insight, perception, persuasion, religion, survival</skill>
+        </proficiencies>
+        <spell_slot>
+            <lv1>4</lv1>
+            <lv2>3</lv2>
+            <lv3>2</lv3>
+            <lv4>0</lv4>
+            <lv5>0</lv5>
+            <lv6>0</lv6>
+            <lv7>0</lv7>
+            <lv8>0</lv8>
+            <lv9>0</lv9>
+        </spell_slot>
+        <stats>
+            <str>12</str>
+            <dex>14</dex>
+            <con>16</con>
+            <int>8</int>
+            <wis>18</wis>
+            <cha>8</cha>
+        </stats>
+        <features>
+            <feature>Ritual Casting: You can cast a cleric spell as a ritual if that spell has the
+                ritual tag and you have the spell prepared.</feature>
+            <feature>Disciple of Life: Also starting at 1st level, your healing spells are more
+                effective. Whenever you use a spell of 1st level or higher to restore hit points to
+                a creature, the creature regains additional hit points equal to 2 + the spell's
+                level.</feature>
+            <feature>Darkvision: Thanks to your elf blood, you have superior vision in dark and dim
+                conditions. You can see in dim light within 60 feet of you as if it were bright
+                light, and in darkness as if it were dim light. You can't discern color in darkness,
+                only shades of gray.</feature>
+            <feature>Fey Ancestry: You have advantage on saving throws against being charmed, and
+                magic can't put you to sleep.</feature>
+            <feature>Shelter of the Faithful: As an acolyte, you command the respect of those who
+                share your faith, and you can perform the religious ceremonies of your deity. You
+                and your adventuring companions can expect to receive free healing and care at a
+                temple, shrine, or other established presence of your faith, though you must provide
+                any material components needed for spells. Those who share your religion will
+                support you (but only you) at a modest lifestyle.
+                You might also have ties to a specific temple dedicated to your chosen deity or
+                pantheon, and you have a residence there. This could be the temple where you used to
+                serve, or a temple where you have found a new home. While near your temple, you can
+                call upon the priests for assistance, provided the assistance you ask for is not
+                hazardous and you remain in good standing with your temple.</feature>
+            <feature>Channel Divinity: At 2nd level, you gain the ability to channel divine energy
+                directly from your deity, using that energy to fuel magical effects. You start with
+                two such effects: Turn Undead and an effect determined by your domain. Some domains
+                grant you additional effects as you advance in levels, as noted in the domain
+                description.
+                When you use your Channel Divinity, you choose which effect to create. You must then
+                finish a short or long rest to use your Channel Divinity again.
+                Some Channel Divinity effects require saving throws. When you use such an effect
+                from this class, the DC equals your cleric spell save DC.
+                Beginning at 6th level, you can use your Channel Divinity twice between rests, and
+                beginning at 18th level. you can use it three times between rests. When you finish a
+                short or long rest, you regain your expended uses.</feature>
+            <feature>Channel Divinity: Turn Undead: As an action, you present your holy sym⁠bol and
+                speak a prayer censuring the Undead. Each Undead that can see or hear you within 30
+                feet of you must make a Wisdom saving throw. If the creature fails its saving throw,
+                it is turned for 1 minute or until it takes any damage.
+                A turned creature must spend its turns trying to move as far away from you as it
+                can, and it can’t willingly move to a space within 30 feet of you. It also can’t
+                take reactions. For its action, it can use only the Dash action or try to escape
+                from an effect that prevents it from moving. If there’s nowhere to move, the
+                creature can use the Dodge action.</feature>
+            <feature>Channel Divinity: Preserve Life: Starting at 2nd level, you can use your
+                Channel Divinity to heal the badly injured.
+                As an action, you present your holy symbol and evoke healing energy that can restore
+                a number of hit points equal to five times your cleric level. Choose any creatures
+                within 30 feet of you, and divide those hit points among them. This feature can
+                restore a creature to no more than half of its hit point maximum. You can’t use this
+                feature on an undead or a construct.</feature>
+        </features>
+        <inventory>
+            <item>Prayer Book</item>
+            <item>Holy Symbol</item>
+            <item>Stick of Incense</item>
+            <item>Vestments</item>
+            <item>Belt Pouch</item>
+            <item>Mace</item>
+            <item>Chain Mail</item>
+            <item>Light Crossbow</item>
+            <item>Crossbow bolts</item>
+            <item>Priest's Pack</item>
+            <item>Shield</item>
+            <item>Common clothes</item>
+            <item>Alms box</item>
+            <item>Block of incense</item>
+            <item>Censer</item>
+            <item>Vestments</item>
+            <item>Backpack</item>
+            <item>Blanket</item>
+            <item>Candle</item>
+            <item>Tinderbox</item>
+            <item>Rations</item>
+            <item>Waterskin</item>
+        </inventory>
+        <img>images/cleric.jpeg</img>
+    </character>
+    <character level="3">
+        <class>
+            <name>Rogue</name>
+            <levels>3</levels>
+        </class>
+        <race>
+            Lightfoot Halfling</race>
+        <ac>14</ac>
+        <hitpoints>15</hitpoints>
+        <proficiencies>
+            <armor>ligth</armor>
+            <weapon>simple, hand crossbow, longsword, rapier, shortsword</weapon>
+            <tool>no</tool>
+            <saving_throw>dex, int</saving_throw>
+            <skill>acrobatics, deception, insight, religion, sleight of hands, stealth</skill>
+        </proficiencies>
+        <stats>
+            <str>8</str>
+            <dex>17</dex>
+            <con>8</con>
+            <int>8</int>
+            <wis>15</wis>
+            <cha>16</cha>
+        </stats>
+        <features>
+            <feature>Thieves' Cant: During your rogue training you learned thieves’ cant, a secret
+                mix of dialect, jargon, and code that allows you to hide messages in seemingly
+                normal conversation. Only another creature that knows thieves’ cant understands such
+                messages. It takes four times longer to convey such a message⁠ than it does to speak
+                the same idea plainly.
+                In addition, you understand a set of secret signs and symbols used to convey short,
+                simple messages, such as whether an area is dangerous or the territory of a thieves’
+                guild, whether loot is nearby, or whether the people in an area are easy marks or
+                will provide a safe house for thieves on the run.</feature>
+            <feature>Sneak Attack: Beginning at 1st level, you know how to strike subtly and exploit
+                a foe’s distraction. Once per turn, you can deal an extra 2d6 damage to one creature
+                you hit with an attack if you have advantage on the attack roll. The attack must use
+                a finesse or a ranged weapon.
+                You don’t need advantage on the attack roll if another enemy of the target is within
+                5 feet of it, that enemy isn’t incapacitated, and you don’t have disadvantage on the
+                attack roll.
+                The amount of the extra damage increases as you gain levels in this class, as shown
+                in the Sneak Attack column of the Rogue table.</feature>
+            <feature>Lucky: When you roll a 1 on an attack roll, ability check, or saving throw, you
+                can reroll the die and must use the new roll.</feature>
+            <feature>Brave: You have advantage on saving throws against being frightened.</feature>
+            <feature>Halfling Nimbleness: You can move through the space of any creature that is of
+                a size larger than yours.</feature>
+            <feature>Naturally Stealthy: You can attempt to hide even when you are obscured only by
+                a creature that is at least one size larger than you.</feature>
+            <feature>Shelter of the Faithful: As an acolyte, you command the respect of those who
+                share your faith, and you can perform the religious ceremonies of your deity. You
+                and your adventuring companions can expect to receive free healing and care at a
+                temple, shrine, or other established presence of your faith, though you must provide
+                any material components needed for spells. Those who share your religion will
+                support you (but only you) at a modest lifestyle.
+                You might also have ties to a specific temple dedicated to your chosen deity or
+                pantheon, and you have a residence there. This could be the temple where you used to
+                serve, or a temple where you have found a new home. While near your temple, you can
+                call upon the priests for assistance, provided the assistance you ask for is not
+                hazardous and you remain in good standing with your temple.</feature>
+            <feature>Cunning Action: Starting at 2nd level, your quick thinking and agility allow
+                you to move and act quickly. You can take a bonus action on each of your turns in
+                combat. This action can be used only to take the Dash, Disengage, or Hide action.</feature>
+            <feature>Fast Hands: Starting at 3rd level, you can use the bonus action granted by your
+                Cunning Action to make a Dexterity (Sleight of Hand) check, use your thieves’ tools
+                to disarm a trap or open a lock, or take the Use an Object action.</feature>
+            <feature>Second-Story Work: When you choose this archetype at 3rd level, you gain the
+                ability to climb faster than normal; climbing no longer costs you extra movement.
+                In addition, when you make a running jump, the distance you cover increases by a
+                number of feet equal to your Dexterity modifier.</feature>
+        </features>
+        <inventory>
+            <item>Prayer Wheel</item>
+            <item>Holy Symbol</item>
+            <item>Stick of Incense</item>
+            <item>Vestments</item>
+            <item>Belt Pouch</item>
+            <item>Shortsword</item>
+            <item>Shortbow</item>
+            <item>Quiver</item>
+            <item>Arrows</item>
+            <item>Dungeoneer's Pack</item>
+            <item>Leather Armor</item>
+            <item>Dagger</item>
+            <item>Thieves' Tools</item>
+            <item>Common clothes</item>
+            <item>Backpack</item>
+            <item>Crowbar</item>
+            <item>Hammer</item>
+            <item>Piton</item>
+            <item>Torch</item>
+            <item>Tinderbox</item>
+            <item>Rations</item>
+            <item>Waterskin</item>
+            <item>Hempen rope</item>
+        </inventory>
+        <img>images/rogue.jpeg</img>
+    </character>
+    <character level="1">
+        <class>
+            <name>Wizard</name>
+            <levels>1</levels>
+        </class>
+        <race>
+            High Elf</race>
+        <ac>13</ac>
+        <hitpoints>7</hitpoints>
+        <proficiencies>
+            <armor></armor>
+            <weapon>dagger, dart, ligth crossbow, longbow, longsword, quarterstaff, shortbow,
+                shortsword, sling</weapon>
+            <tool>no</tool>
+            <saving_throw>int, wis</saving_throw>
+            <skill>arcana, history, investigation, medicine, perception</skill>
+        </proficiencies>
+        <spell_slot>
+            <lv1>2</lv1>
+            <lv2>0</lv2>
+            <lv3>0</lv3>
+            <lv4>0</lv4>
+            <lv5>0</lv5>
+            <lv6>0</lv6>
+            <lv7>0</lv7>
+            <lv8>0</lv8>
+            <lv9>0</lv9>
+        </spell_slot>
+        <stats>
+            <str>10</str>
+            <dex>16</dex>
+            <con>13</con>
+            <int>16</int>
+            <wis>10</wis>
+            <cha>10</cha>
+        </stats>
+        <features>
+            <feature>Ritual Casting: You can cast a wizard spell as a ritual if that spell has the
+                ritual tag and you have the spell in your spellbook. You don’t need to have the
+                spell prepared.</feature>
+            <feature>Arcane Recovery: You have learned to regain some of your magical energy by
+                studying your spellbook. Once per day when you finish a short rest, you can choose
+                expended spell slots to recover. The spell slots can have a combined level that is
+                equal to or less than half your wizard level (rounded up), and none of the slots can
+                be 6th level or higher.
+                For example, if you’re a 4th-level wizard, you can recover up to two levels worth of
+                spell slots. You can recover either a 2nd-level spell slot or two 1st-level spell
+                slots.</feature>
+            <feature>Fey Ancestry: You have advantage on saving throws against being charmed, and
+                magic can’t put you to sleep.</feature>
+            <feature>Trance: Elves don't need to sleep. Instead, they meditate deeply, remaining
+                semiconscious, for 4 hours a day. (The Common word for such meditation is “trance.”)
+                While meditating, you can dream after a fashion; such dreams are actually mental
+                exercises that have become reflexive through years of practice. After resting in
+                this way, you gain the same benefit that a human does from 8 hours of sleep.</feature>
+            <feature>Darkvision: Accustomed to twilit forests and the night sky, you have superior
+                vision in dark and dim conditions. You can see in dim light within 60 feet of you as
+                if it were bright light, and in darkness as if it were dim light. You can’t discern
+                color in darkness, only shades of gray.</feature>
+        </features>
+        <inventory>
+            <item>Arcane Focus</item>
+            <item>Dagger</item>
+            <item>Explorer's Pack</item>
+            <item>Spellbook</item>
+            <item>Backpack</item>
+            <item>Bedroll</item>
+            <item>Mess Kit</item>
+            <item>Tinderbox</item>
+            <item>Torch</item>
+            <item>Ration</item>
+            <item>Waterskin</item>
+            <item>Hempen Rope</item>
+        </inventory>
+        <img>images/wizard.jpeg</img>
+    </character>
+</cahracters>
