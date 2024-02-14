@@ -4,6 +4,10 @@
 	<!-- Se define una variable "almacenXml" para obtener los datos almacenados en el archivo dnd.xml -->
 	<xsl:variable name="dnd" select="document('../xml/dnd.xml')"/>
 
+	<xsl:template match="name">
+		
+	</xsl:template>
+
     <xsl:template match="/">
 	
 	<html lang="es">
@@ -18,27 +22,41 @@
 		<!-- Header -->
 		<header id="header">
 			<div class="inner">
-				<a href="../index.html" class="logo">Catalogo 2</a>
+				<a class="logo">Spels</a>
 				<nav id="nav">
 					<a href="../index.html">Home</a>
 					<a href="catalogo1.xml">Characters</a>
 					<a href="catalogo2.xml">Spels</a>
-					<a href="#">Contact</a>
+					<a href="contacto.html">Contact</a>
 				</nav>
 			</div>
 		</header>
 		<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
 
+		
+
+
 		<!-- Main -->
-		<section id="main" >
+		<section id="main">
 			<div class="inner">
 				<header>
 					<h1>Spells</h1>
-					<xsl:for-each select="">
+					<xsl:for-each select="$dnd/dnd/spels/spell">
+					
 					<table>
-						<th>
-							
-						</th>
+						<tr>
+							<th>
+								<a href="https://www.dndbeyond.com/spells/{translate(name, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ ', 'abcdefghijklmnopqrstuvwxyz-')}"><h2><xsl:value-of select="name"/></h2></a>
+							</th>
+						</tr>
+						<tr>
+							<td>
+								<h4><a href="https://www.dndbeyond.com/spells/school/{@school}"><img width="25" src="../images/{@school}.png"/></a><xsl:value-of select="@school"/></h4>
+							</td>
+							<td class="right">
+								<h4>cast: <xsl:value-of select="cast"/></h4>
+							</td>
+						</tr>
 					</table>
 					</xsl:for-each>
 				</header>
@@ -57,7 +75,7 @@
 						<li><a href="#"><img src="../images/instagram.png" alt="twiter" width="30" height="30"/></a></li>
 						<li><a href="#"><img src="../images/github.png" alt="twiter" width="30" height="30"/></a></li>
 					</ul>
-					Datos de la empresa o asosciación
+					Unleash your imagination and create your own D&amp;D legacy!
 				</div>
 			</div>
 		</footer>

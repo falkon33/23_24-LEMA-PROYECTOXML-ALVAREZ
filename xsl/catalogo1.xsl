@@ -8,7 +8,7 @@
 		
 		<html lang="es">
 			<head>
-				<title>UD6: Proyecto dirigido a la validación, formateo y transformación de documentos XML</title>
+				<title>Premade characters</title>
 				<meta charset="utf-8" />
 				<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 				<link rel="stylesheet" href="../css/main.css" />
@@ -40,9 +40,12 @@
 				</section>
 				<section>
 					<xsl:for-each select="$dnd/dnd/characters/character">
-						<div>
+						<div class="inner">
 							<h2>Character level: <xsl:value-of select="@level"/></h2>
-							<div>
+							<h3>Principal class: </h3>
+							<a href="https://www.dndbeyond.com/classes/{img}"><img src="../images/{img}.jpeg"/></a>
+							<h3>Classes:</h3>
+							<div class="inner">
 								<xsl:for-each select="class">
 									<h3><xsl:value-of select="levels"/> levels of <xsl:value-of select="name"/></h3>
 								</xsl:for-each>
@@ -50,10 +53,26 @@
 							<h3>Race: <xsl:value-of select="race"/></h3>
 							<h3>Armor class: <xsl:value-of select="ac"/></h3>
 							<h3>Hitpoints: <xsl:value-of select="hitpoints"/></h3>
+							<h3> Proficiencies:</h3>
 							<xsl:for-each select="proficiencies/*">
 								<xsl:if test=". != 'no'">
-										<p><b><xsl:value-of select="name()"/>:</b> <xsl:value-of select="."/></p>
+										<p><b><xsl:value-of select="name()"/>: </b><xsl:value-of select="."/></p>
 								</xsl:if>
+							</xsl:for-each>
+							<xsl:for-each select="spell_slot/*">
+								<p><b>Spell slot level <xsl:value-of select="position()"/>: </b><xsl:value-of select="."/></p>								
+							</xsl:for-each>
+							<h3> Stats:</h3>
+							<xsl:for-each select="stats/*">
+								<p><b><xsl:value-of select="name()"/>:</b> <xsl:value-of select="."/></p>
+							</xsl:for-each>
+							<h3> Features:</h3>
+							<xsl:for-each select="features/*">
+								<p><b>Feature<xsl:value-of select="position()"/>: </b><xsl:value-of select="."/></p>
+							</xsl:for-each>
+							<h3> Inventory:</h3>
+							<xsl:for-each select="inventory/*">
+								<p><b>Item<xsl:value-of select="position()"/>: </b><xsl:value-of select="."/></p>
 							</xsl:for-each>
 						</div>
 					</xsl:for-each>
@@ -70,7 +89,7 @@
 								<li><a href="#"><img src="../images/instagram.png" alt="twiter" width="30" height="30"/></a></li>
 								<li><a href="#"><img src="../images/github.png" alt="twiter" width="30" height="30"/></a></li>
 							</ul>
-							Datos de la empresa o asosciación
+							Unleash your imagination and create your own D&amp;D legacy!
 						</div>
 					</div>
 				</footer>

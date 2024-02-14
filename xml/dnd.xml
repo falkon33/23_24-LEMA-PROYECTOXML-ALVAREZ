@@ -59,7 +59,7 @@
                 <item>Waterskin</item>
                 <item>Hempen Rope</item>
             </inventory>
-            <img>images/barbarian.jpeg</img>
+            <img>barbarian</img>
         </character>
         <character level="4">
             <class>
@@ -188,7 +188,7 @@
                 <item>Waterskin</item>
                 <item>Hempen Rope</item>
             </inventory>
-            <img>images/warlock.jpeg</img>
+            <img>warlock</img>
         </character>
         <character level="12">
             <class>
@@ -274,7 +274,7 @@
                 <item>Badge With Your Rank</item>
                 <item>A Trophy Taken From A Fallen Enemy</item>
             </inventory>
-            <img>images/fighter.jpeg</img>
+            <img>fighter</img>
         </character>
         <character level="5">
             <class>
@@ -386,7 +386,7 @@
                 <item>Rations</item>
                 <item>Waterskin</item>
             </inventory>
-            <img>images/cleric.jpeg</img>
+            <img>cleric</img>
         </character>
         <character level="3">
             <class>
@@ -497,7 +497,7 @@
             <ac>13</ac>
             <hitpoints>7</hitpoints>
             <proficiencies>
-                <armor></armor>
+                <armor>no</armor>
                 <weapon>dagger, dart, ligth crossbow, longbow, longsword, quarterstaff, shortbow,
                     shortsword, sling</weapon>
                 <tool>no</tool>
@@ -561,7 +561,7 @@
                 <item>Waterskin</item>
                 <item>Hempen Rope</item>
             </inventory>
-            <img>images/wizard.jpeg</img>
+            <img>wizard</img>
         </character>
     </characters>
     <spels>

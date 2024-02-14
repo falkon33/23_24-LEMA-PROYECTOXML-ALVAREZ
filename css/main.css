@@ -7,11 +7,21 @@
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 */
 
+@font-face {
+	font-family: dnd;
+	src: url('../fonts/DragonHunter-9Ynxj.otf');
+}
 
+@font-face {
+	font-family: dnd2;
+	src: url('../fonts/Draconis-JRw6B.ttf');
+}
 
+/* Cosas mias */
 
-/* cosas mias /*
-
+.right {
+	text-align: right;
+}
 
 /* Reset CSS */
 html,
@@ -1791,9 +1801,8 @@ body,
 input,
 select,
 textarea {
-	font-family: "Lato", sans-serif;
 	font-size: 15pt;
-	font-weight: 300;
+	font-weight: 100;
 	line-height: 2;
 }
 
@@ -1884,6 +1893,7 @@ h3,
 h4,
 h5,
 h6 {
+	font-family: dnd;
 	font-weight: 700;
 	line-height: 1.5;
 	margin: 0 0 1em 0;
@@ -1896,6 +1906,7 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
+	font-family: dnd;
 	color: inherit;
 	text-decoration: none;
 }
@@ -3396,7 +3407,7 @@ body {
 }
 
 #header .logo {
-	font-family: 'Pacifico', cursive;
+	font-family: dnd2;
 	display: inline-block;
 	height: inherit;
 	left: 0;
@@ -3406,9 +3417,9 @@ body {
 	position: absolute;
 	top: 0;
 	color: #e5474b;
-	font-size: 1.75em;
+	font-size: 2em;
 	text-transform: none;
-	font-weight: normal;
+	font-weight: bold;
 	padding: 0;
 }
 
@@ -4239,4 +4250,14 @@ body.is-loading #banner:after {
 		padding: 2em 0 0.1em 0;
 	}
 
+}
+
+img {
+	margin-right: 20px;
+	margin-top: 10px;
+	border: 1px solid black;
+}
+
+table {
+	border: 1px solid black;
 }
