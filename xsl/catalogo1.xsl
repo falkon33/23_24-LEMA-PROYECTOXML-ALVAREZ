@@ -23,6 +23,7 @@
 							<a href="../index.html">Home</a>
 							<a href="catalogo1.xml">Characters</a>
 							<a href="catalogo2.xml">Spels</a>
+							<a href="catalogo3.xml">Prices</a>
 							<a href="contacto.html">Contact</a>
 						</nav>
 					</div>
@@ -41,39 +42,88 @@
 				<section>
 					<xsl:for-each select="$dnd/dnd/characters/character">
 						<div class="inner">
-							<h2>Character level: <xsl:value-of select="@level"/></h2>
-							<h3>Principal class: </h3>
-							<a href="https://www.dndbeyond.com/classes/{img}"><img src="../images/{img}.jpeg"/></a>
-							<h3>Classes:</h3>
-							<div class="inner">
-								<xsl:for-each select="class">
-									<h3><xsl:value-of select="levels"/> levels of <xsl:value-of select="name"/></h3>
+							<table>
+								<tr>
+									<th colspan="6">
+										<h3 class="align-center">Character level: <xsl:value-of select="@level"/></h3>
+									</th>
+								</tr>
+								<tr>
+									<th colspan="6">
+										<h3 class="align-center">Principal class:</h3>
+										<p class="align-center"><a href="https://www.dndbeyond.com/classes/{img}"><img class="sqr" src="../images/{img}.jpeg"/></a></p>
+									</th>
+								</tr>
+								<tr>
+									<th colspan="6">
+										<h3 class="align-center">Classes:</h3>
+									</th>
+								</tr>
+								<tr>
+									<td colspan="6">
+										<xsl:for-each select="class">
+											<xsl:value-of select="levels"/> levels of <xsl:value-of select="name"/>&#160;
+										</xsl:for-each>
+									</td>
+								</tr>
+								<tr>
+									<th colspan="6"><h3 class="align-center">Race:</h3></th>
+								</tr>
+								<tr>
+									<td colspan="6"><xsl:value-of select="race"/></td>
+								</tr>
+								<tr>
+									<th colspan="6"><h3 class="align-center">Armor class: </h3></th>
+								</tr>
+								<tr>
+									<td colspan="6"><xsl:value-of select="ac"/></td>
+								</tr>
+								<tr>
+									<th colspan="6"><h3 class="align-center">Hitpoints: </h3></th>
+								</tr>
+								<tr>
+									<td colspan="6"><xsl:value-of select="hitpoints"/></td>
+								</tr>
+								<tr>
+									<th colspan="6"> <h3 class="align-center">Proficiencies:</h3></th>
+									<xsl:for-each select="proficiencies/*">
+										<xsl:if test=". != 'no'">
+											<tr>
+												<td colspan="6"><b><xsl:value-of select="name()"/>: </b><xsl:value-of select="."/></td>
+											</tr>
+										</xsl:if>
+									</xsl:for-each>
+								</tr>
+								<xsl:for-each select="spell_slot/*">
+									<tr>
+										<td colspan="6"><b>Spell slot level <xsl:value-of select="position()"/>: </b><xsl:value-of select="."/></td>
+									</tr>								
 								</xsl:for-each>
-							</div>
-							<h3>Race: <xsl:value-of select="race"/></h3>
-							<h3>Armor class: <xsl:value-of select="ac"/></h3>
-							<h3>Hitpoints: <xsl:value-of select="hitpoints"/></h3>
-							<h3> Proficiencies:</h3>
-							<xsl:for-each select="proficiencies/*">
-								<xsl:if test=". != 'no'">
-										<p><b><xsl:value-of select="name()"/>: </b><xsl:value-of select="."/></p>
-								</xsl:if>
-							</xsl:for-each>
-							<xsl:for-each select="spell_slot/*">
-								<p><b>Spell slot level <xsl:value-of select="position()"/>: </b><xsl:value-of select="."/></p>								
-							</xsl:for-each>
-							<h3> Stats:</h3>
-							<xsl:for-each select="stats/*">
-								<p><b><xsl:value-of select="name()"/>:</b> <xsl:value-of select="."/></p>
-							</xsl:for-each>
-							<h3> Features:</h3>
-							<xsl:for-each select="features/*">
-								<p><b>Feature<xsl:value-of select="position()"/>: </b><xsl:value-of select="."/></p>
-							</xsl:for-each>
-							<h3> Inventory:</h3>
-							<xsl:for-each select="inventory/*">
-								<p><b>Item<xsl:value-of select="position()"/>: </b><xsl:value-of select="."/></p>
-							</xsl:for-each>
+								<tr>
+									<th colspan="6"> <h3 class="align-center">Stats:</h3></th>
+								</tr>
+								<tr>
+									<xsl:for-each select="stats/*">
+										<td><b><xsl:value-of select="name()"/>:</b> <xsl:value-of select="."/></td>
+									</xsl:for-each>
+								</tr>
+								<tr>
+									<th colspan="6"> <h3 class="align-center">Features:</h3></th>
+								</tr>
+								<xsl:for-each select="features/*">
+									<tr>
+										<td colspan="6"><b>Feature<xsl:value-of select="position()"/>: </b><xsl:value-of select="."/></td>
+									</tr>
+								</xsl:for-each>
+								<tr>
+									<th colspan="6"> <h3 class="align-center">Inventory:</h3></th>
+								</tr>
+								<xsl:for-each select="inventory/*">
+									<tr>
+										<td colspan="6"><b>Item<xsl:value-of select="position()"/>: </b><xsl:value-of select="."/></td>
+									</tr>
+								</xsl:for-each>
+							</table>
 						</div>
 					</xsl:for-each>
 				</section>

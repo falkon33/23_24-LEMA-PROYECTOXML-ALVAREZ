@@ -23,6 +23,14 @@
 	text-align: right;
 }
 
+.left {
+	text-align: left;
+}
+
+.black {
+	color: rgb(68, 0, 0);
+}
+
 /* Reset CSS */
 html,
 body,
@@ -1893,6 +1901,7 @@ h3,
 h4,
 h5,
 h6 {
+	letter-spacing: 0.1em;
 	font-family: dnd;
 	font-weight: 700;
 	line-height: 1.5;
@@ -4252,7 +4261,7 @@ body.is-loading #banner:after {
 
 }
 
-img {
+.sqr {
 	margin-right: 20px;
 	margin-top: 10px;
 	border: 1px solid black;

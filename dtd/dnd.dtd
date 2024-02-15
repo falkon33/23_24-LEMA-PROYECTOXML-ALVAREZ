@@ -37,9 +37,10 @@
 <!ELEMENT item (#PCDATA)>
 <!ELEMENT img (#PCDATA)>
 <!ELEMENT spels (spell+)>
-<!ELEMENT spell (name,class,tags,cast,desc)>
+<!ELEMENT spell (name,class,tags,cast,desc,price)>
 <!ATTLIST spell school NMTOKEN #REQUIRED>
 <!ELEMENT tags (tag*)>
 <!ELEMENT tag (#PCDATA)>
 <!ELEMENT cast (#PCDATA)>
 <!ELEMENT desc (#PCDATA)>
+<!ELEMENT price (#PCDATA)>

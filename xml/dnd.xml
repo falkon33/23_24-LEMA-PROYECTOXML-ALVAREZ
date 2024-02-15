@@ -393,8 +393,7 @@
                 <name>Rogue</name>
                 <levels>3</levels>
             </class>
-            <race>
-                Lightfoot Halfling</race>
+            <race> Lightfoot Halfling</race>
             <ac>14</ac>
             <hitpoints>15</hitpoints>
             <proficiencies>
@@ -413,52 +412,53 @@
                 <cha>16</cha>
             </stats>
             <features>
-                <feature>Thieves' Cant: During your rogue training you learned thieves’ cant, a secret
-                    mix of dialect, jargon, and code that allows you to hide messages in seemingly
-                    normal conversation. Only another creature that knows thieves’ cant understands such
-                    messages. It takes four times longer to convey such a message⁠ than it does to speak
-                    the same idea plainly.
-                    In addition, you understand a set of secret signs and symbols used to convey short,
-                    simple messages, such as whether an area is dangerous or the territory of a thieves’
-                    guild, whether loot is nearby, or whether the people in an area are easy marks or
-                    will provide a safe house for thieves on the run.</feature>
-                <feature>Sneak Attack: Beginning at 1st level, you know how to strike subtly and exploit
-                    a foe’s distraction. Once per turn, you can deal an extra 2d6 damage to one creature
-                    you hit with an attack if you have advantage on the attack roll. The attack must use
-                    a finesse or a ranged weapon.
-                    You don’t need advantage on the attack roll if another enemy of the target is within
-                    5 feet of it, that enemy isn’t incapacitated, and you don’t have disadvantage on the
-                    attack roll.
-                    The amount of the extra damage increases as you gain levels in this class, as shown
-                    in the Sneak Attack column of the Rogue table.</feature>
-                <feature>Lucky: When you roll a 1 on an attack roll, ability check, or saving throw, you
-                    can reroll the die and must use the new roll.</feature>
+                <feature>Thieves' Cant: During your rogue training you learned thieves’ cant, a
+                    secret mix of dialect, jargon, and code that allows you to hide messages in
+                    seemingly normal conversation. Only another creature that knows thieves’ cant
+                    understands such messages. It takes four times longer to convey such a message⁠
+                    than it does to speak the same idea plainly. In addition, you understand a set
+                    of secret signs and symbols used to convey short, simple messages, such as
+                    whether an area is dangerous or the territory of a thieves’ guild, whether loot
+                    is nearby, or whether the people in an area are easy marks or will provide a
+                    safe house for thieves on the run.</feature>
+                <feature>Sneak Attack: Beginning at 1st level, you know how to strike subtly and
+                    exploit a foe’s distraction. Once per turn, you can deal an extra 2d6 damage to
+                    one creature you hit with an attack if you have advantage on the attack roll.
+                    The attack must use a finesse or a ranged weapon. You don’t need advantage on
+                    the attack roll if another enemy of the target is within 5 feet of it, that
+                    enemy isn’t incapacitated, and you don’t have disadvantage on the attack roll.
+                    The amount of the extra damage increases as you gain levels in this class, as
+                    shown in the Sneak Attack column of the Rogue table.</feature>
+                <feature>Lucky: When you roll a 1 on an attack roll, ability check, or saving throw,
+                    you can reroll the die and must use the new roll.</feature>
                 <feature>Brave: You have advantage on saving throws against being frightened.</feature>
-                <feature>Halfling Nimbleness: You can move through the space of any creature that is of
-                    a size larger than yours.</feature>
-                <feature>Naturally Stealthy: You can attempt to hide even when you are obscured only by
-                    a creature that is at least one size larger than you.</feature>
-                <feature>Shelter of the Faithful: As an acolyte, you command the respect of those who
-                    share your faith, and you can perform the religious ceremonies of your deity. You
-                    and your adventuring companions can expect to receive free healing and care at a
-                    temple, shrine, or other established presence of your faith, though you must provide
-                    any material components needed for spells. Those who share your religion will
-                    support you (but only you) at a modest lifestyle.
-                    You might also have ties to a specific temple dedicated to your chosen deity or
-                    pantheon, and you have a residence there. This could be the temple where you used to
-                    serve, or a temple where you have found a new home. While near your temple, you can
-                    call upon the priests for assistance, provided the assistance you ask for is not
-                    hazardous and you remain in good standing with your temple.</feature>
-                <feature>Cunning Action: Starting at 2nd level, your quick thinking and agility allow
-                    you to move and act quickly. You can take a bonus action on each of your turns in
-                    combat. This action can be used only to take the Dash, Disengage, or Hide action.</feature>
-                <feature>Fast Hands: Starting at 3rd level, you can use the bonus action granted by your
-                    Cunning Action to make a Dexterity (Sleight of Hand) check, use your thieves’ tools
-                    to disarm a trap or open a lock, or take the Use an Object action.</feature>
-                <feature>Second-Story Work: When you choose this archetype at 3rd level, you gain the
-                    ability to climb faster than normal; climbing no longer costs you extra movement.
-                    In addition, when you make a running jump, the distance you cover increases by a
-                    number of feet equal to your Dexterity modifier.</feature>
+                <feature>Halfling Nimbleness: You can move through the space of any creature that is
+                    of a size larger than yours.</feature>
+                <feature>Naturally Stealthy: You can attempt to hide even when you are obscured only
+                    by a creature that is at least one size larger than you.</feature>
+                <feature>Shelter of the Faithful: As an acolyte, you command the respect of those
+                    who share your faith, and you can perform the religious ceremonies of your
+                    deity. You and your adventuring companions can expect to receive free healing
+                    and care at a temple, shrine, or other established presence of your faith,
+                    though you must provide any material components needed for spells. Those who
+                    share your religion will support you (but only you) at a modest lifestyle. You
+                    might also have ties to a specific temple dedicated to your chosen deity or
+                    pantheon, and you have a residence there. This could be the temple where you
+                    used to serve, or a temple where you have found a new home. While near your
+                    temple, you can call upon the priests for assistance, provided the assistance
+                    you ask for is not hazardous and you remain in good standing with your temple.</feature>
+                <feature>Cunning Action: Starting at 2nd level, your quick thinking and agility
+                    allow you to move and act quickly. You can take a bonus action on each of your
+                    turns in combat. This action can be used only to take the Dash, Disengage, or
+                    Hide action.</feature>
+                <feature>Fast Hands: Starting at 3rd level, you can use the bonus action granted by
+                    your Cunning Action to make a Dexterity (Sleight of Hand) check, use your
+                    thieves’ tools to disarm a trap or open a lock, or take the Use an Object
+                    action.</feature>
+                <feature>Second-Story Work: When you choose this archetype at 3rd level, you gain
+                    the ability to climb faster than normal; climbing no longer costs you extra
+                    movement. In addition, when you make a running jump, the distance you cover
+                    increases by a number of feet equal to your Dexterity modifier.</feature>
             </features>
             <inventory>
                 <item>Prayer Wheel</item>
@@ -485,15 +485,14 @@
                 <item>Waterskin</item>
                 <item>Hempen rope</item>
             </inventory>
-            <img>images/rogue.jpeg</img>
+            <img>rogue</img>
         </character>
         <character level="1">
             <class>
                 <name>Wizard</name>
                 <levels>1</levels>
             </class>
-            <race>
-                High Elf</race>
+            <race> High Elf</race>
             <ac>13</ac>
             <hitpoints>7</hitpoints>
             <proficiencies>
@@ -524,28 +523,28 @@
                 <cha>10</cha>
             </stats>
             <features>
-                <feature>Ritual Casting: You can cast a wizard spell as a ritual if that spell has the
-                    ritual tag and you have the spell in your spellbook. You don’t need to have the
-                    spell prepared.</feature>
+                <feature>Ritual Casting: You can cast a wizard spell as a ritual if that spell has
+                    the ritual tag and you have the spell in your spellbook. You don’t need to have
+                    the spell prepared.</feature>
                 <feature>Arcane Recovery: You have learned to regain some of your magical energy by
-                    studying your spellbook. Once per day when you finish a short rest, you can choose
-                    expended spell slots to recover. The spell slots can have a combined level that is
-                    equal to or less than half your wizard level (rounded up), and none of the slots can
-                    be 6th level or higher.
-                    For example, if you’re a 4th-level wizard, you can recover up to two levels worth of
-                    spell slots. You can recover either a 2nd-level spell slot or two 1st-level spell
-                    slots.</feature>
-                <feature>Fey Ancestry: You have advantage on saving throws against being charmed, and
-                    magic can’t put you to sleep.</feature>
+                    studying your spellbook. Once per day when you finish a short rest, you can
+                    choose expended spell slots to recover. The spell slots can have a combined
+                    level that is equal to or less than half your wizard level (rounded up), and
+                    none of the slots can be 6th level or higher. For example, if you’re a 4th-level
+                    wizard, you can recover up to two levels worth of spell slots. You can recover
+                    either a 2nd-level spell slot or two 1st-level spell slots.</feature>
+                <feature>Fey Ancestry: You have advantage on saving throws against being charmed,
+                    and magic can’t put you to sleep.</feature>
                 <feature>Trance: Elves don't need to sleep. Instead, they meditate deeply, remaining
-                    semiconscious, for 4 hours a day. (The Common word for such meditation is “trance.”)
-                    While meditating, you can dream after a fashion; such dreams are actually mental
-                    exercises that have become reflexive through years of practice. After resting in
-                    this way, you gain the same benefit that a human does from 8 hours of sleep.</feature>
-                <feature>Darkvision: Accustomed to twilit forests and the night sky, you have superior
-                    vision in dark and dim conditions. You can see in dim light within 60 feet of you as
-                    if it were bright light, and in darkness as if it were dim light. You can’t discern
-                    color in darkness, only shades of gray.</feature>
+                    semiconscious, for 4 hours a day. (The Common word for such meditation is
+                    “trance.”) While meditating, you can dream after a fashion; such dreams are
+                    actually mental exercises that have become reflexive through years of practice.
+                    After resting in this way, you gain the same benefit that a human does from 8
+                    hours of sleep.</feature>
+                <feature>Darkvision: Accustomed to twilit forests and the night sky, you have
+                    superior vision in dark and dim conditions. You can see in dim light within 60
+                    feet of you as if it were bright light, and in darkness as if it were dim light.
+                    You can’t discern color in darkness, only shades of gray.</feature>
             </features>
             <inventory>
                 <item>Arcane Focus</item>
@@ -582,6 +581,8 @@
                 If you choose two, they must be within 5 feet of each other. A target must succeed
                 on a Dexterity saving throw or take 1d6 acid damage. This spell’s damage increases
                 by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6). </desc>
+            <price>47</price>
+
         </spell>
 
         <spell school="Necromancy">
@@ -603,6 +604,7 @@
                 an undead target, it also has disadvantage on attack rolls against you until the end
                 of your next turn. This spell's damage increases by 1d8 when you reach 5th level
                 (2d8), 11th level (3d8), and 17th level (4d8). </desc>
+            <price>498</price>
         </spell>
 
         <spell school="Transmutation">
@@ -626,6 +628,7 @@
                 flames and animate as you like. The shapes last for 1 hour. If you cast this spell
                 multiple times, you can have up to three of its non-instantaneous effects active at
                 a time, and you can dismiss such an effect as an action. </desc>
+            <price>13</price>
         </spell>
 
         <spell school="Conjuration">
@@ -651,6 +654,7 @@
                 flammable objects in its area that aren’t being worn or carried. The spell’s damage
                 increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level
                 (4d8). </desc>
+            <price>53</price>
         </spell>
 
         <spell school="Evocation">
@@ -672,6 +676,7 @@
                 bonus action on your turn, you can move the lights up to 60 feet to a new spot
                 within range. A light must be within 20 feet of another light created by this spell,
                 and a light winks out if it exceeds the spell's range. </desc>
+            <price>32</price>
         </spell>
 
         <spell school="Transmutation">
@@ -692,6 +697,7 @@
                 such as falling leaves, a puff of wind, the sound of a small animal, or the faint
                 odor of skunk. The effect must fit in a 5-foot cube. You instantly light or snuff
                 out a candle, a torch, or a small campfire. </desc>
+            <price>12</price>
         </spell>
 
         <spell school="Transmutation">
@@ -709,6 +715,7 @@
                 level, three beams at 11th level, and four beams at 17th level. You can direct the
                 beams at the same target or at different ones. Make a separate attack roll for each
                 beam. </desc>
+            <price>123</price>
         </spell>
 
         <spell school="Evocation">
@@ -727,6 +734,7 @@
                 object hit by this spell ignites if it isn't being worn or carried. This spell's
                 damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and
                 17th level (4d10). </desc>
+            <price>5</price>
         </spell>
 
         <spell school="Evocation">
@@ -748,6 +756,7 @@
                 1d6 cold damage, and it has disadvantage on the next weapon attack roll it makes
                 before the end of its next turn. The spell’s damage increases by 1d6 when you reach
                 5th level (2d6), 11th level (3d6), and 17th level (4d6). </desc>
+            <price>76</price>
         </spell>
 
         <spell school="Divination">
@@ -764,6 +773,7 @@
             <desc> You touch one willing creature. Once before the spell ends, the target can roll a
                 d4 and add the number rolled to one ability check of its choice. It can roll the die
                 before or after making the ability check. The spell then ends. </desc>
+            <price>32</price>
         </spell>
 
         <spell school="Transmutation">
@@ -785,6 +795,7 @@
                 away from you. It isn’t pushed with enough force to cause damage. You create a
                 harmless sensory effect using air, such as causing leaves to rustle, wind to slam
                 shutters shut, or your clothing to ripple in a breeze. </desc>
+            <price>37</price>
         </spell>
 
         <spell school="Evocation">
@@ -807,6 +818,7 @@
                 object with something opaque blocks the light. The spell ends if you cast it again
                 or dismiss it as an action. If you target an object held or worn by a hostile
                 creature, that creature must succeed on a Dexterity saving throw to avoid the spell. </desc>
+            <price>39</price>
         </spell>
 
         <spell school="Conjuration">
@@ -829,6 +841,7 @@
                 an unlocked door or container, stow or retrieve an item from an open container, or
                 pour the contents out of a vial. You can move the hand up to 30 feet each time you
                 use it. The hand can't attack, activate magic items, or carry more than 10 pounds. </desc>
+            <price>98</price>
         </spell>
 
         <spell school="Transmutation">
@@ -850,6 +863,7 @@
                 your spellcasting ability modifier. Hit or miss, the spell then ends on the stone.
                 If you cast this spell again, the spell ends early on any pebbles still affected by
                 it. </desc>
+            <price>97</price>
         </spell>
 
         <spell school="Transmutation">
@@ -871,6 +885,7 @@
                 your spellcasting ability modifier. Hit or miss, the spell then ends on the stone.
                 If you cast this spell again, the spell ends early on any pebbles still affected by
                 it. </desc>
+            <price>91</price>
         </spell>
 
         <spell school="Transmutation">
@@ -893,6 +908,7 @@
                 As long as the break or tear is no larger than 1 foot in any dimension, you mend it,
                 leaving no trace of the former damage. This spell can physically repair a magic item
                 or construct, but the spell can't restore magic to such an object.</desc>
+            <price>94</price>
         </spell>
 
         <spell school="Transmutation">
@@ -915,6 +931,7 @@
                 inch of common metal, a thin sheet of lead, or 3 feet of wood blocks the spell. The
                 spell doesn't have to follow a straight line and can travel freely around corners or
                 through openings.</desc>
+            <price>93</price>
         </spell>
 
         <spell school="Illusion">
@@ -943,6 +960,7 @@
                 successful Intelligence (Investigation) check against your spell save DC. If a
                 creature discerns the illusion for what it is, the illusion becomes faint to the
                 creature.</desc>
+            <price>96</price>
         </spell>
 
         <spell school="Transmutation">
@@ -967,6 +985,7 @@
                 if it is already difficult terrain. This change lasts for 1 hour. If you cast this
                 spell multiple times, you can have no more than two of its non-instantaneous effects
                 active at a time, and you can dismiss such an effect as an actio</desc>
+            <price>74</price>
         </spell>
 
         <spell school="Conjuration">
@@ -987,6 +1006,7 @@
                 puff of noxious gas from your palm. The creature must succeed on a Constitution
                 saving throw or take 1d12 poison damage. This spell's damage increases by 1d12 when
                 you reach 5th level (2d12), 11th level (3d12), and 17th level (4d12).</desc>
+            <price>76</price>
         </spell>
 
         <spell school="Conjuration">
@@ -1009,6 +1029,7 @@
                 puff of noxious gas from your palm. The creature must succeed on a Constitution
                 saving throw or take 1d12 poison damage. This spell's damage increases by 1d12 when
                 you reach 5th level (2d12), 11th level (3d12), and 17th level (4d12).</desc>
+            <price>72</price>
         </spell>
 
         <spell school="Transmutation">
@@ -1035,6 +1056,7 @@
                 can fit in your hand and that lasts until the end of your next turn. If you cast
                 this spell multiple times, you can have up to three of its non-instantaneous effects
                 active at a time, and you can dismiss such an effect as an action.</desc>
+            <price>15</price>
         </spell>
 
         <spell school="Conjuration">
@@ -1056,6 +1078,7 @@
                 you can hurl the flame at a creature within 30 feet of you. Make a ranged spell
                 attack. On a hit, the target takes 1d8 fire damage. This spell's damage increases by
                 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</desc>
+            <price>17</price>
         </spell>
 
         <spell school="Abjuration">
@@ -1072,6 +1095,7 @@
             <desc> You touch one willing creature. Once before the spell ends, the target can roll a
                 d4 and add the number rolled to one saving throw of its choice. It can roll the die
                 before or after making the saving throw. The spell then ends.</desc>
+            <price>19</price>
         </spell>
 
         <spell school="Evocation">
@@ -1089,6 +1113,7 @@
                 target gains no benefit from cover for this saving throw. The spell's damage
                 increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level
                 (4d8).</desc>
+            <price>27</price>
         </spell>
 
         <spell school="Evocation">
@@ -1113,6 +1138,7 @@
                 cast this spell multiple times, you can have no more than two of its
                 non-instantaneous effects active at a time, and you can dismiss such an effect as an
                 action.</desc>
+            <price>21</price>
         </spell>
 
         <spell school="Transmutation">
@@ -1131,6 +1157,7 @@
                 attack and damage rolls of melee attacks using that weapon, and the weapon's damage
                 die becomes a d8. The weapon also becomes magical, if it isn't already. The spell
                 ends if you cast it again or if you let go of the weapon.</desc>
+            <price>28</price>
         </spell>
 
         <spell school="Necromancy">
@@ -1145,6 +1172,7 @@
             <cast>1 Action</cast>
             <desc>You touch a living creature that has 0 hit points. The creature becomes stable.
                 This spell has no effect on undead or constructs.</desc>
+            <price>29</price>
         </spell>
 
         <spell school="Transmutation">
@@ -1166,6 +1194,7 @@
                 shut. You alter the appearance of your eyes for 1 minute. If you cast this spell
                 multiple times, you can have up to three of its 1-minute effects active at a time,
                 and you can dismiss such an effect as an action.</desc>
+            <price>27</price>
         </spell>
 
         <spell school="Evocation">
@@ -1187,6 +1216,7 @@
                 creature within range, other than you, must succeed on a Constitution saving throw
                 or take 1d6 thunder damage. The spell’s damage increases by 1d6 when you reach 5th
                 level (2d6), 11th level (3d6), and 17th level (4d6)</desc>
+            <price>35</price>
         </spell>
 
         <spell school="Divination">
@@ -1204,6 +1234,7 @@
             <desc>You point a finger at a target in range. Your magic grants you a brief insight
                 into the target's defenses. On your next turn, you gain advantage on your first
                 attack roll against the target, provided that this spell hasn't ended.</desc>
+            <price>45</price>
         </spell>
 
         <spell school="Enchantment">
@@ -1223,6 +1254,7 @@
                 disadvantage on the next attack roll it makes before the end of its next turn. This
                 spell's damage increases by 1d4 when you reach 5th level (2d4), 11th level (3d4),
                 and 17th level (4d4).</desc>
+            <price>48</price>
         </spell>
     </spels>
 </dnd>

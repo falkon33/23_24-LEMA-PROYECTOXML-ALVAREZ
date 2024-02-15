@@ -103,6 +103,7 @@
                                         </xs:element>
                                         <xs:element name="cast" type="xs:string" />
                                         <xs:element name="desc" type="xs:string" />
+                                        <xs:element name="price" type="xs:decimal"/>
                                     </xs:sequence>
                                     <xs:attribute name="school" use="required" />
                                 </xs:complexType>
