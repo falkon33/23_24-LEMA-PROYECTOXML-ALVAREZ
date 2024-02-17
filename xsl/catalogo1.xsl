@@ -55,7 +55,7 @@
 						<li><a href="#"><img src="../images/twiter.png" alt="twiter" width="30" height="30"/></a></li>
 						<li><a href="#"><img src="../images/facebook.png" alt="twiter" width="30" height="30"/></a></li>
 						<li><a href="#"><img src="../images/instagram.png" alt="twiter" width="30" height="30"/></a></li>
-						<li><a href="#"><img src="../images/github.png" alt="twiter" width="30" height="30"/></a></li>
+						<li><a href="https://github.com/falkon33/23_24-LEMA-PROYECTOXML-ALVAREZ"><img src="../images/github.png" alt="twiter" width="30" height="30"/></a></li>
 					</ul>
 					Datos de la empresa o asosciación
 				</div>
