@@ -2,15 +2,20 @@
 <!DOCTYPE dnd SYSTEM "../dtd/dnd.dtd">
 <?xml-model href="../xsd/dnd.xsd"?>
 <dnd>
+    <!-- personajes -->
     <characters>
-        <character level="1">
+        <!-- nivel -->
+        <character level="1" id="b1">
+            <!-- clases -->
             <class>
                 <name>Barbarian</name>
                 <levels>1</levels>
             </class>
+            <!-- datos basicos -->
             <race>Human</race>
             <ac>13</ac>
             <hitpoints>15</hitpoints>
+            <!-- competencias -->
             <proficiencies>
                 <armor>ligth, medium, shield</armor>
                 <weapon>martial, simple</weapon>
@@ -18,6 +23,7 @@
                 <saving_throw>str, con</saving_throw>
                 <skill>athletic, deception, insight, survival</skill>
             </proficiencies>
+            <!-- puntuaciones de caracteristicas -->
             <stats>
                 <str>16</str>
                 <dex>11</dex>
@@ -27,6 +33,7 @@
                 <cha>10</cha>
             </stats>
             <features>
+                <!-- dotes -->
                 <feature>Rage: In battle, you fight with primal ferocity. On your turn, you can
                     enter a rage as a bonus action. While raging, you gain the following benefits if
                     you aren’t wearing heavy armor: -You have advantage on Strength checks and
@@ -46,6 +53,7 @@
                     shield and still gain this benefit.</feature>
             </features>
             <inventory>
+                <!-- objetos -->
                 <item>Battleaxe</item>
                 <item>Handaxe</item>
                 <item>Explorer's Pack</item>
@@ -59,9 +67,13 @@
                 <item>Waterskin</item>
                 <item>Hempen Rope</item>
             </inventory>
+            <!-- imagen -->
             <img>barbarian</img>
+            <link>https://https://www.dndbeyond.com/classes/barbarian</link>
         </character>
-        <character level="4">
+        <!-- nivel -->
+        <character level="4" id="b2">
+            <!-- clases -->
             <class>
                 <name>Warlock</name>
                 <levels>2</levels>
@@ -70,9 +82,11 @@
                 <name>Sorcerer</name>
                 <levels>2</levels>
             </class>
+            <!-- datos basicos -->
             <race>Tiefling</race>
             <ac>13</ac>
             <hitpoints>19</hitpoints>
+            <!-- competencias -->
             <proficiencies>
                 <armor>ligth</armor>
                 <weapon>simple</weapon>
@@ -80,6 +94,7 @@
                 <saving_throw>wis, cha</saving_throw>
                 <skill>deception, insight, intimidation, religion</skill>
             </proficiencies>
+            <!-- espacios de conjuro -->
             <spell_slot>
                 <lv1>5</lv1>
                 <lv2>0</lv2>
@@ -91,6 +106,7 @@
                 <lv8>0</lv8>
                 <lv9>0</lv9>
             </spell_slot>
+            <!-- puntuaciones de caracteristicas -->
             <stats>
                 <str>8</str>
                 <dex>15</dex>
@@ -99,6 +115,7 @@
                 <wis>15</wis>
                 <cha>17</cha>
             </stats>
+            <!-- dotes -->
             <features>
                 <feature>Dark One's Blessing: Starting at 1st level, when you reduce a hostile
                     creature to 0 hit points, you gain temporary hit points equal to your Charisma
@@ -167,6 +184,7 @@
                     trait and regain the ability to do so when you finish a long rest. Charisma is
                     your spellcasting ability for these spells.</feature>
             </features>
+            <!-- objetos -->
             <inventory>
                 <item>Prayer Boock</item>
                 <item>Arcane Focus</item>
@@ -188,16 +206,23 @@
                 <item>Waterskin</item>
                 <item>Hempen Rope</item>
             </inventory>
+            <!-- imagen -->
             <img>warlock</img>
+            <!-- link -->
+            <link>https://https://www.dndbeyond.com/classes/warlock</link>
         </character>
-        <character level="12">
+        <!-- nivel -->
+        <character level="12" id="b3">
+            <!-- clases -->
             <class>
                 <name>Figther</name>
                 <levels>12</levels>
             </class>
+            <!-- datos basicos -->
             <race>Githyanki</race>
             <ac>16</ac>
             <hitpoints>106</hitpoints>
+            <!-- competencias -->
             <proficiencies>
                 <armor>ligth, medium, heavy, shield</armor>
                 <weapon>martial, simple</weapon>
@@ -205,6 +230,7 @@
                 <saving_throw>str, con</saving_throw>
                 <skill>athletic, insight, intimidation, perception</skill>
             </proficiencies>
+            <!-- puntuaciones de caracteristicas -->
             <stats>
                 <str>20</str>
                 <dex>12</dex>
@@ -213,6 +239,7 @@
                 <wis>14</wis>
                 <cha>8</cha>
             </stats>
+            <!-- dotes -->
             <features>
                 <feature>Second Wind: You have a limited well of stamina that you can draw on to
                     protect yourself from harm. On your turn, you can use a bonus action to regain
@@ -256,6 +283,7 @@
                 <feature>Githyanki psionic(lv3): at level 3, you can cast jump once per day</feature>
                 <feature>Githyanki psionic(lv5): at level 5, you can cast misty step once per day</feature>
             </features>
+            <!-- objetos -->
             <inventory>
                 <item>Chain Mail</item>
                 <item>Greatsword</item>
@@ -274,16 +302,23 @@
                 <item>Badge With Your Rank</item>
                 <item>A Trophy Taken From A Fallen Enemy</item>
             </inventory>
+            <!-- imagen -->
             <img>fighter</img>
+            <!-- link -->
+            <link>https://https://www.dndbeyond.com/classes/fighter</link>
         </character>
-        <character level="5">
+        <!-- nivel -->
+        <character level="5" id="b4">
+            <!-- clases -->
             <class>
                 <name>Cleric</name>
                 <levels>5</levels>
             </class>
+            <!-- datos basicos -->
             <race>Half-elf</race>
             <ac>18</ac>
             <hitpoints>38</hitpoints>
+            <!-- competencias -->
             <proficiencies>
                 <armor>ligth, medium, heavy, shield</armor>
                 <weapon>simple</weapon>
@@ -291,6 +326,7 @@
                 <saving_throw>wis, cha</saving_throw>
                 <skill>history, insight, perception, persuasion, religion, survival</skill>
             </proficiencies>
+            <!-- espacios de conjuro -->
             <spell_slot>
                 <lv1>4</lv1>
                 <lv2>3</lv2>
@@ -302,6 +338,7 @@
                 <lv8>0</lv8>
                 <lv9>0</lv9>
             </spell_slot>
+            <!-- puntuaciones de caracteristicas -->
             <stats>
                 <str>12</str>
                 <dex>14</dex>
@@ -310,6 +347,7 @@
                 <wis>18</wis>
                 <cha>8</cha>
             </stats>
+            <!-- dotes -->
             <features>
                 <feature>Ritual Casting: You can cast a cleric spell as a ritual if that spell has
                     the ritual tag and you have the spell prepared.</feature>
@@ -362,6 +400,7 @@
                     more than half of its hit point maximum. You can’t use this feature on an undead
                     or a construct.</feature>
             </features>
+            <!-- objetos -->
             <inventory>
                 <item>Prayer Book</item>
                 <item>Holy Symbol</item>
@@ -386,16 +425,23 @@
                 <item>Rations</item>
                 <item>Waterskin</item>
             </inventory>
+            <!-- imagen -->
             <img>cleric</img>
+            <!-- link -->
+            <link>https://https://www.dndbeyond.com/classes/cleric</link>
         </character>
-        <character level="3">
+        <!-- nivel -->
+        <character level="3" id="b5">
+            <!-- clases -->
             <class>
                 <name>Rogue</name>
                 <levels>3</levels>
             </class>
+            <!-- datos basicos -->
             <race> Lightfoot Halfling</race>
             <ac>14</ac>
             <hitpoints>15</hitpoints>
+            <!-- competencias -->
             <proficiencies>
                 <armor>ligth</armor>
                 <weapon>simple, hand crossbow, longsword, rapier, shortsword</weapon>
@@ -403,6 +449,7 @@
                 <saving_throw>dex, int</saving_throw>
                 <skill>acrobatics, deception, insight, religion, sleight of hands, stealth</skill>
             </proficiencies>
+            <!-- puntuaciones de caracteristicas -->
             <stats>
                 <str>8</str>
                 <dex>17</dex>
@@ -411,6 +458,7 @@
                 <wis>15</wis>
                 <cha>16</cha>
             </stats>
+            <!-- dotes -->
             <features>
                 <feature>Thieves' Cant: During your rogue training you learned thieves’ cant, a
                     secret mix of dialect, jargon, and code that allows you to hide messages in
@@ -460,6 +508,7 @@
                     movement. In addition, when you make a running jump, the distance you cover
                     increases by a number of feet equal to your Dexterity modifier.</feature>
             </features>
+            <!-- objetos -->
             <inventory>
                 <item>Prayer Wheel</item>
                 <item>Holy Symbol</item>
@@ -485,16 +534,23 @@
                 <item>Waterskin</item>
                 <item>Hempen rope</item>
             </inventory>
+            <!-- imagen -->
             <img>rogue</img>
+            <!-- link -->
+            <link>https://https://www.dndbeyond.com/classes/rogue</link>
         </character>
-        <character level="1">
+        <!-- nivel -->
+        <character level="1" id="b6">
+            <!-- clases -->
             <class>
                 <name>Wizard</name>
                 <levels>1</levels>
             </class>
+            <!-- datos basicos -->
             <race> High Elf</race>
             <ac>13</ac>
             <hitpoints>7</hitpoints>
+            <!-- competencias -->
             <proficiencies>
                 <armor>no</armor>
                 <weapon>dagger, dart, ligth crossbow, longbow, longsword, quarterstaff, shortbow,
@@ -503,6 +559,7 @@
                 <saving_throw>int, wis</saving_throw>
                 <skill>arcana, history, investigation, medicine, perception</skill>
             </proficiencies>
+            <!-- espacios de conjuro -->
             <spell_slot>
                 <lv1>2</lv1>
                 <lv2>0</lv2>
@@ -514,6 +571,7 @@
                 <lv8>0</lv8>
                 <lv9>0</lv9>
             </spell_slot>
+            <!-- puntuaciones de caracteristicas -->
             <stats>
                 <str>10</str>
                 <dex>16</dex>
@@ -522,6 +580,7 @@
                 <wis>10</wis>
                 <cha>10</cha>
             </stats>
+            <!-- dotes -->
             <features>
                 <feature>Ritual Casting: You can cast a wizard spell as a ritual if that spell has
                     the ritual tag and you have the spell in your spellbook. You don’t need to have
@@ -546,6 +605,7 @@
                     feet of you as if it were bright light, and in darkness as if it were dim light.
                     You can’t discern color in darkness, only shades of gray.</feature>
             </features>
+            <!-- objetos -->
             <inventory>
                 <item>Arcane Focus</item>
                 <item>Dagger</item>
@@ -560,18 +620,22 @@
                 <item>Waterskin</item>
                 <item>Hempen Rope</item>
             </inventory>
+            <!-- imagen -->
             <img>wizard</img>
+            <!-- link -->
+            <link>https://https://www.dndbeyond.com/classes/wizard</link>
         </character>
     </characters>
+    <!-- conjuros -->
     <spels>
-
-        <spell school="Conjuration">
+        <spell school="Conjuration" id="a1">
             <name>Acid Splash</name>
             <class>
                 <name>SORCERER</name>
                 <name>WIZARD</name>
                 <name>ARTIFICER</name>
             </class>
+            <!-- utilidad -->
             <tags>
                 <tag>Acid</tag>
                 <tag>Damage </tag>
@@ -582,16 +646,18 @@
                 on a Dexterity saving throw or take 1d6 acid damage. This spell’s damage increases
                 by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6). </desc>
             <price>47</price>
-
+             <!-- link -->
+             <link>https://www.dndbeyond.com/spells/acid-splash</link>
         </spell>
 
-        <spell school="Necromancy">
+        <spell school="Necromancy" id="a2">
             <name>Chill Touch</name>
             <class>
                 <name>SORCERER</name>
                 <name>WIZARD</name>
                 <name>WARLOCK</name>
             </class>
+            <!-- utilidad -->
             <tags>
                 <tag>Necrotic</tag>
                 <tag>Damage</tag>
@@ -605,15 +671,18 @@
                 of your next turn. This spell's damage increases by 1d8 when you reach 5th level
                 (2d8), 11th level (3d8), and 17th level (4d8). </desc>
             <price>498</price>
+            <!-- link -->
+            <link>https://www.dndbeyond.com/spells/chill-touch</link>
         </spell>
 
-        <spell school="Transmutation">
+        <spell school="Transmutation" id="a3">
             <name>Control Flames</name>
             <class>
                 <name>SORCERER</name>
                 <name>WIZARD</name>
                 <name>DRUID</name>
             </class>
+            <!-- utilidad -->
             <tags>
                 <tag>Control</tag>
             </tags>
@@ -629,9 +698,11 @@
                 multiple times, you can have up to three of its non-instantaneous effects active at
                 a time, and you can dismiss such an effect as an action. </desc>
             <price>13</price>
+            <!-- link -->
+            <link>https://www.dndbeyond.com/spells/control-flames</link>
         </spell>
 
-        <spell school="Conjuration">
+        <spell school="Conjuration" id="a4">
             <name>Create Bonfire</name>
             <class>
                 <name>ARTIFICER</name>
@@ -640,6 +711,7 @@
                 <name>WIZARD</name>
                 <name>WARLOCK</name>
             </class>
+            <!-- utilidad -->
             <tags>
                 <tag>Fire</tag>
                 <tag>Damage</tag>
@@ -655,9 +727,11 @@
                 increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level
                 (4d8). </desc>
             <price>53</price>
+            <!-- link -->
+            <link>https://www.dndbeyond.com/spells/create-bonfire</link>
         </spell>
 
-        <spell school="Evocation">
+        <spell school="Evocation" id="a5">
             <name>Dancing Lights</name>
             <class>
                 <name>ARTIFICER</name>
@@ -665,6 +739,7 @@
                 <name>SORCERER</name>
                 <name>WIZARD</name>
             </class>
+            <!-- utilidad -->
             <tags>
                 <tag>Utility</tag>
             </tags>
@@ -677,13 +752,16 @@
                 within range. A light must be within 20 feet of another light created by this spell,
                 and a light winks out if it exceeds the spell's range. </desc>
             <price>32</price>
+            <!-- link -->
+            <link>https://www.dndbeyond.com/spells/dancing-lights</link>
         </spell>
 
-        <spell school="Transmutation">
+        <spell school="Transmutation" id="a6">
             <name>Druidcraft</name>
             <class>
                 <name>DRUID</name>
             </class>
+            <!-- utilidad -->
             <tags>
                 <tag>Control</tag>
             </tags>
@@ -698,13 +776,16 @@
                 odor of skunk. The effect must fit in a 5-foot cube. You instantly light or snuff
                 out a candle, a torch, or a small campfire. </desc>
             <price>12</price>
+            <!-- link -->
+            <link>https://www.dndbeyond.com/spells/druidcraft</link>
         </spell>
 
-        <spell school="Transmutation">
+        <spell school="Transmutation" id="a7">
             <name>Eldritch Blast</name>
             <class>
                 <name>WARLOCK</name>
             </class>
+            <!-- utilidad -->
             <tags>
                 <tag>Damage</tag>
             </tags>
@@ -716,15 +797,18 @@
                 beams at the same target or at different ones. Make a separate attack roll for each
                 beam. </desc>
             <price>123</price>
+            <!-- link -->
+            <link>https://www.dndbeyond.com/spells/eldritch-blast</link>
         </spell>
 
-        <spell school="Evocation">
+        <spell school="Evocation" id="a8">
             <name>Fire Bolt</name>
             <class>
                 <name>SORCERER</name>
                 <name>WIZARD</name>
                 <name>ARTIFICER</name>
             </class>
+            <!-- utilidad -->
             <tags>
                 <tag>Damage</tag>
             </tags>
@@ -735,9 +819,11 @@
                 damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and
                 17th level (4d10). </desc>
             <price>5</price>
+            <!-- link -->
+            <link>https://www.dndbeyond.com/spells/fire-bolt</link>
         </spell>
 
-        <spell school="Evocation">
+        <spell school="Evocation" id="a9">
             <name>Frostbite</name>
             <class>
                 <name>SORCERER</name>
@@ -746,6 +832,7 @@
                 <name>WARLOCK</name>
                 <name>DRUID</name>
             </class>
+            <!-- utilidad -->
             <tags>
                 <tag>Damage</tag>
                 <tag>Debuff</tag>
@@ -757,15 +844,18 @@
                 before the end of its next turn. The spell’s damage increases by 1d6 when you reach
                 5th level (2d6), 11th level (3d6), and 17th level (4d6). </desc>
             <price>76</price>
+            <!-- link -->
+            <link>https://www.dndbeyond.com/spells/frostbite</link>
         </spell>
 
-        <spell school="Divination">
+        <spell school="Divination" id="a10">
             <name>Guidance</name>
             <class>
                 <name>CLERIC</name>
                 <name>ARTIFICER</name>
                 <name>DRUID</name>
             </class>
+            <!-- utilidad -->
             <tags>
                 <tag>Buff</tag>
             </tags>
@@ -774,15 +864,18 @@
                 d4 and add the number rolled to one ability check of its choice. It can roll the die
                 before or after making the ability check. The spell then ends. </desc>
             <price>32</price>
+            <!-- link -->
+            <link>https://www.dndbeyond.com/spells/guidance</link>
         </spell>
 
-        <spell school="Transmutation">
+        <spell school="Transmutation" id="a11">
             <name>Gust</name>
             <class>
                 <name>WIZARD</name>
                 <name>SORCERER</name>
                 <name>DRUID</name>
             </class>
+            <!-- utilidad -->
             <tags>
                 <tag>Control</tag>
             </tags>
@@ -796,9 +889,11 @@
                 harmless sensory effect using air, such as causing leaves to rustle, wind to slam
                 shutters shut, or your clothing to ripple in a breeze. </desc>
             <price>37</price>
+            <!-- link -->
+            <link>https://www.dndbeyond.com/spells/gust</link>
         </spell>
 
-        <spell school="Evocation">
+        <spell school="Evocation" id="a12">
             <name>Light</name>
             <class>
                 <name>WIZARD</name>
@@ -807,6 +902,7 @@
                 <name>BARD</name>
                 <name>CLERIC</name>
             </class>
+            <!-- utilidad -->
             <tags>
                 <tag>Creation</tag>
                 <tag>Utility</tag>
@@ -819,9 +915,11 @@
                 or dismiss it as an action. If you target an object held or worn by a hostile
                 creature, that creature must succeed on a Dexterity saving throw to avoid the spell. </desc>
             <price>39</price>
+            <!-- link -->
+            <link>https://www.dndbeyond.com/spells/light</link>
         </spell>
 
-        <spell school="Conjuration">
+        <spell school="Conjuration" id="a13">
             <name>Mage Hand</name>
             <class>
                 <name>WIZARD</name>
@@ -830,6 +928,7 @@
                 <name>BARD</name>
                 <name>WARLOCK</name>
             </class>
+            <!-- utilidad -->
             <tags>
                 <tag>Utility</tag>
             </tags>
@@ -842,15 +941,18 @@
                 pour the contents out of a vial. You can move the hand up to 30 feet each time you
                 use it. The hand can't attack, activate magic items, or carry more than 10 pounds. </desc>
             <price>98</price>
+            <!-- link -->
+            <link>https://www.dndbeyond.com/spells/mage-hand</link>
         </spell>
 
-        <spell school="Transmutation">
+        <spell school="Transmutation" id="a14">
             <name>Magic Stone</name>
             <class>
                 <name>ARTIFICER</name>
                 <name>DRUID</name>
                 <name>WARLOCK</name>
             </class>
+            <!-- utilidad -->
             <tags>
                 <tag>Damage</tag>
             </tags>
@@ -864,31 +966,11 @@
                 If you cast this spell again, the spell ends early on any pebbles still affected by
                 it. </desc>
             <price>97</price>
+            <!-- link -->
+            <link>https://www.dndbeyond.com/spells/magic-stone</link>
         </spell>
 
-        <spell school="Transmutation">
-            <name>Magic Stone</name>
-            <class>
-                <name>ARTIFICER</name>
-                <name>DRUID</name>
-                <name>WARLOCK</name>
-            </class>
-            <tags>
-                <tag>Damage</tag>
-            </tags>
-            <cast>1 Action</cast>
-            <desc> You touch one to three pebbles and imbue them with magic. You or someone else can
-                make a ranged spell attack with one of the pebbles by throwing it or hurling it with
-                a sling. If thrown, it has a range of 60 feet. If someone else attacks with the
-                pebble, that attacker adds your spellcasting ability modifier, not the attacker’s,
-                to the attack roll. On a hit, the target takes bludgeoning damage equal to 1d6 +
-                your spellcasting ability modifier. Hit or miss, the spell then ends on the stone.
-                If you cast this spell again, the spell ends early on any pebbles still affected by
-                it. </desc>
-            <price>91</price>
-        </spell>
-
-        <spell school="Transmutation">
+        <spell school="Transmutation" id="a15">
             <name>Mending</name>
             <class>
                 <name>BARD</name>
@@ -902,6 +984,7 @@
             <tags>
                 <tag>Utility</tag>
             </tags>
+            <!-- utilidad -->
             <cast>1 Minute</cast>
             <desc> This spell repairs a single break or tear in an object you touch, such as a
                 broken chain link, two halves of a broken key, a torn cloak, or a leaking wineskin.
@@ -909,16 +992,19 @@
                 leaving no trace of the former damage. This spell can physically repair a magic item
                 or construct, but the spell can't restore magic to such an object.</desc>
             <price>94</price>
+            <!-- link -->
+            <link>https://www.dndbeyond.com/spells/mending</link>
         </spell>
 
-        <spell school="Transmutation">
-            <name>Mending</name>
+        <spell school="Transmutation" id="a16">
+            <name>Message</name>
             <class>
                 <name>BARD</name>
                 <name>ARTIFICER</name>
                 <name>SORCERER</name>
                 <name>WIZARD</name>
             </class>
+            <!-- utilidad -->
             <tags>
                 <tag>Social</tag>
                 <tag>Comunication</tag>
@@ -932,9 +1018,11 @@
                 spell doesn't have to follow a straight line and can travel freely around corners or
                 through openings.</desc>
             <price>93</price>
+            <!-- link -->
+            <link>https://www.dndbeyond.com/spells/message</link>
         </spell>
 
-        <spell school="Illusion">
+        <spell school="Illusion" id="a17">
             <name>Minor Illusion</name>
             <class>
                 <name>BARD</name>
@@ -942,6 +1030,7 @@
                 <name>SORCERER</name>
                 <name>WIZARD</name>
             </class>
+            <!-- utilidad -->
             <tags>
                 <tag>Control</tag>
             </tags>
@@ -961,15 +1050,18 @@
                 creature discerns the illusion for what it is, the illusion becomes faint to the
                 creature.</desc>
             <price>96</price>
+            <!-- link -->
+            <link>https://www.dndbeyond.com/spells/minor-illusion</link>
         </spell>
 
-        <spell school="Transmutation">
+        <spell school="Transmutation" id="a18">
             <name>Mold Earth</name>
             <class>
                 <name>DRUID</name>
                 <name>SORCERER</name>
                 <name>WIZARD</name>
             </class>
+            <!-- utilidad -->
             <tags>
                 <tag>Control</tag>
             </tags>
@@ -986,9 +1078,11 @@
                 spell multiple times, you can have no more than two of its non-instantaneous effects
                 active at a time, and you can dismiss such an effect as an actio</desc>
             <price>74</price>
+            <!-- link -->
+            <link>https://www.dndbeyond.com/spells/mold-earth</link>
         </spell>
 
-        <spell school="Conjuration">
+        <spell school="Conjuration" id="a19">
             <name>Poison Spray</name>
             <class>
                 <name>ARTIFICER</name>
@@ -997,6 +1091,7 @@
                 <name>SORCERER</name>
                 <name>WIZARD</name>
             </class>
+            <!-- utilidad -->
             <tags>
                 <tag>Damage</tag>
                 <tag>Poison</tag>
@@ -1007,32 +1102,11 @@
                 saving throw or take 1d12 poison damage. This spell's damage increases by 1d12 when
                 you reach 5th level (2d12), 11th level (3d12), and 17th level (4d12).</desc>
             <price>76</price>
+            <!-- link -->
+            <link>https://www.dndbeyond.com/spells/poison-spray</link>
         </spell>
 
-        <spell school="Conjuration">
-            <name>Prestidigitation</name>
-            <class>
-                <name>BARD</name>
-                <name>CLERIC</name>
-                <name>ARTIFICER</name>
-                <name>DRUID</name>
-                <name>WARLOCK</name>
-                <name>SORCERER</name>
-                <name>WIZARD</name>
-            </class>
-            <tags>
-                <tag>Damage</tag>
-                <tag>Poison</tag>
-            </tags>
-            <cast>1 Action</cast>
-            <desc> You extend your hand toward a creature you can see within range and project a
-                puff of noxious gas from your palm. The creature must succeed on a Constitution
-                saving throw or take 1d12 poison damage. This spell's damage increases by 1d12 when
-                you reach 5th level (2d12), 11th level (3d12), and 17th level (4d12).</desc>
-            <price>72</price>
-        </spell>
-
-        <spell school="Transmutation">
+        <spell school="Transmutation" id="a20">
             <name>Prestidigitation</name>
             <class>
                 <name>BARD</name>
@@ -1041,6 +1115,7 @@
                 <name>SORCERER</name>
                 <name>WIZARD</name>
             </class>
+            <!-- utilidad -->
             <tags>
                 <tag>Utility</tag>
             </tags>
@@ -1057,13 +1132,16 @@
                 this spell multiple times, you can have up to three of its non-instantaneous effects
                 active at a time, and you can dismiss such an effect as an action.</desc>
             <price>15</price>
+            <!-- link -->
+            <link>https://www.dndbeyond.com/spells/prestidigitation</link>
         </spell>
 
-        <spell school="Conjuration">
+        <spell school="Conjuration" id="a21">
             <name>Produce Flame</name>
             <class>
                 <name>DRUID</name>
             </class>
+            <!-- utilidad -->
             <tags>
                 <tag>Creation</tag>
                 <tag>Damage</tag>
@@ -1079,15 +1157,18 @@
                 attack. On a hit, the target takes 1d8 fire damage. This spell's damage increases by
                 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</desc>
             <price>17</price>
+             <!-- link -->
+             <link>https://www.dndbeyond.com/spells/produce-flame</link>
         </spell>
 
-        <spell school="Abjuration">
+        <spell school="Abjuration" id="a22">
             <name>Resistance</name>
             <class>
                 <name>CLERIC</name>
                 <name>DRUID</name>
                 <name>ARTIFICER</name>
             </class>
+            <!-- utilidad -->
             <tags>
                 <tag>Buff</tag>
             </tags>
@@ -1096,13 +1177,16 @@
                 d4 and add the number rolled to one saving throw of its choice. It can roll the die
                 before or after making the saving throw. The spell then ends.</desc>
             <price>19</price>
+             <!-- link -->
+             <link>https://www.dndbeyond.com/spells/resistance</link>
         </spell>
 
-        <spell school="Evocation">
+        <spell school="Evocation" id="a23">
             <name>Sacred Flame</name>
             <class>
                 <name>CLERIC</name>
             </class>
+            <!-- utilidad -->
             <tags>
                 <tag>Damage</tag>
                 <tag>Radiant</tag>
@@ -1114,15 +1198,18 @@
                 increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level
                 (4d8).</desc>
             <price>27</price>
+             <!-- link -->
+             <link>https://www.dndbeyond.com/spells/sacred-flame</link>
         </spell>
 
-        <spell school="Evocation">
+        <spell school="Evocation" id="a24">
             <name>Shape Water</name>
             <class>
                 <name>DRUID</name>
                 <name>SORCERER</name>
                 <name>WIZARD</name>
             </class>
+            <!-- utilidad -->
             <tags>
                 <tag>Control</tag>
             </tags>
@@ -1139,13 +1226,16 @@
                 non-instantaneous effects active at a time, and you can dismiss such an effect as an
                 action.</desc>
             <price>21</price>
+             <!-- link -->
+             <link>https://www.dndbeyond.com/spells/shape-water</link>
         </spell>
 
-        <spell school="Transmutation">
+        <spell school="Transmutation" id="a25">
             <name>Shillelagh</name>
             <class>
                 <name>DRUID</name>
             </class>
+            <!-- utilidad -->
             <tags>
                 <tag>Damage</tag>
                 <tag>Buff</tag>
@@ -1158,14 +1248,17 @@
                 die becomes a d8. The weapon also becomes magical, if it isn't already. The spell
                 ends if you cast it again or if you let go of the weapon.</desc>
             <price>28</price>
+             <!-- link -->
+             <link>https://www.dndbeyond.com/spells/shillelagh</link>
         </spell>
 
-        <spell school="Necromancy">
+        <spell school="Necromancy" id="a26">
             <name>Spare the Dying</name>
             <class>
                 <name>CLERIC</name>
                 <name>ARTIFICER</name>
             </class>
+            <!-- utilidad -->
             <tags>
                 <tag>Healing</tag>
             </tags>
@@ -1173,13 +1266,16 @@
             <desc>You touch a living creature that has 0 hit points. The creature becomes stable.
                 This spell has no effect on undead or constructs.</desc>
             <price>29</price>
+             <!-- link -->
+             <link>https://www.dndbeyond.com/spells/spare-the-dying</link>
         </spell>
 
-        <spell school="Transmutation">
+        <spell school="Transmutation" id="a27">
             <name>Thaumaturgy</name>
             <class>
                 <name>CLERIC</name>
             </class>
+            <!-- utilidad -->
             <tags>
                 <tag>Control</tag>
             </tags>
@@ -1193,12 +1289,16 @@
                 whispers. You instantaneously cause an unlocked door or window to fly open or slam
                 shut. You alter the appearance of your eyes for 1 minute. If you cast this spell
                 multiple times, you can have up to three of its 1-minute effects active at a time,
-                and you can dismiss such an effect as an action.</desc>
+                and you can dismiss such an effect as an action.
+            </desc>
             <price>27</price>
+             <!-- link -->
+             <link>https://www.dndbeyond.com/spells/thaumaturgy</link>
         </spell>
+        
 
-        <spell school="Evocation">
-            <name>Thaumaturgy</name>
+        <spell school="Evocation" id="a28">
+            <name>Thunderwave</name>
             <class>
                 <name>BARD</name>
                 <name>DRUID</name>
@@ -1207,6 +1307,7 @@
                 <name>WIZARD</name>
                 <name>ARTIFICER</name>
             </class>
+            <!-- utilidad -->
             <tags>
                 <tag>Damage</tag>
                 <tag>Thunder</tag>
@@ -1217,9 +1318,11 @@
                 or take 1d6 thunder damage. The spell’s damage increases by 1d6 when you reach 5th
                 level (2d6), 11th level (3d6), and 17th level (4d6)</desc>
             <price>35</price>
+             <!-- link -->
+             <link>https://www.dndbeyond.com/spells/thunderwave</link>
         </spell>
 
-        <spell school="Divination">
+        <spell school="Divination" id="a29">
             <name>True Strike</name>
             <class>
                 <name>BARD</name>
@@ -1227,6 +1330,7 @@
                 <name>WARLOCK</name>
                 <name>WIZARD</name>
             </class>
+            <!-- utilidad -->
             <tags>
                 <tag>Foreknowledge</tag>
             </tags>
@@ -1235,13 +1339,16 @@
                 into the target's defenses. On your next turn, you gain advantage on your first
                 attack roll against the target, provided that this spell hasn't ended.</desc>
             <price>45</price>
+             <!-- link -->
+             <link>https://www.dndbeyond.com/spells/true-strike</link>
         </spell>
 
-        <spell school="Enchantment">
+        <spell school="Enchantment" id="a30">
             <name>Vicious Mockery</name>
             <class>
                 <name>BARD</name>
             </class>
+            <!-- utilidad -->
             <tags>
                 <tag>Damage</tag>
                 <tag>Debuff</tag>
@@ -1255,6 +1362,8 @@
                 spell's damage increases by 1d4 when you reach 5th level (2d4), 11th level (3d4),
                 and 17th level (4d4).</desc>
             <price>48</price>
+             <!-- link -->
+             <link>https://www.dndbeyond.com/spells/vicious-mockery</link>
         </spell>
     </spels>
 </dnd>

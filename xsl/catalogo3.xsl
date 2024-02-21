@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     
-    <!-- Se define una variable "almacenXml" para obtener los datos almacenados en el archivo dnd.xml -->
+    <!-- Se define una variable "dnd" para obtener los datos almacenados en el archivo dnd.xml -->
     <xsl:variable name="dnd" select="document('../xml/dnd.xml')"/>
     
     <xsl:template match="name">
@@ -12,7 +12,7 @@
         
         <html lang="es">
             <head>
-                <title>UD6: Proyecto dirigido a la validación, formateo y transformación de documentos XML</title>
+                <title>Prices</title>
                 <meta charset="utf-8" />
                 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
                 <link rel="stylesheet" href="../css/main.css" />
@@ -22,26 +22,44 @@
                 <!-- Header -->
                 <header id="header">
                     <div class="inner">
-                        <a class="logo">Spels</a>
+                        <a class="logo">Prices</a>
                         <nav id="nav">
                             <a href="../index.html">Home</a>
                             <a href="catalogo1.xml">Characters</a>
                             <a href="catalogo2.xml">Spels</a>
                             <a href="catalogo3.xml">Prices</a>
+                            <a href="catalogo4.xml">List</a>
                             <a href="contacto.html">Contact</a>
                         </nav>
                     </div>
                 </header>
                 <a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
-                
-                
-                
-                
                 <!-- Main -->
                 <section id="main">
                     <div class="inner">
-                        
-                        <!-- Poner codigo aqui -->
+                        <p>Products: <xsl:value-of select="count($dnd/dnd/characters/character)+count($dnd/dnd/spels/spell)"/></p>
+                        <h3 class="center">Characters</h3>
+                        <ul>
+                            <!-- Iterar sobre cada personaje -->
+                            <xsl:for-each select="$dnd/dnd/characters/character">
+                                <li>
+                                    <a href="https://www.dndbeyond.com/classes/{img}">
+                                        <xsl:value-of select="img"/>
+                                    </a>
+                                </li>
+                            </xsl:for-each>
+                        </ul>
+                        <h3 class="center">Spels</h3>
+                        <ul>
+                            <!-- Iterar sobre cada hechizo y mostrar el precio con iva tachado y aplicado descuento en verde -->
+                            <xsl:for-each select="$dnd/dnd/spels/spell">
+                                <li>
+                                    <a href="https://www.dndbeyond.com/spells/{translate(name, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ ', 'abcdefghijklmnopqrstuvwxyz-')}"><xsl:value-of select="name"/></a>
+                                    <span>&#160;Price: <del><xsl:value-of select="format-number(price * 1.21, '#.##')"/>SP</del></span>
+                                    <span class="green">&#160;<xsl:value-of select="format-number(price * 1.21-price*0.2, '#.##')"/>SP</span>
+                                </li>
+                            </xsl:for-each>
+                        </ul>
                     </div>
                 </section>
                 
@@ -51,10 +69,10 @@
                         <div class="copyright">
                             2024 DyD Sami , Aketza , Dani
                             <ul class="icons">
-                                <li><a href="#"><img src="../images/twiter.png" alt="twiter" width="30" height="30"/></a></li>
-                                <li><a href="#"><img src="../images/facebook.png" alt="twiter" width="30" height="30"/></a></li>
-                                <li><a href="#"><img src="../images/instagram.png" alt="twiter" width="30" height="30"/></a></li>
-                                <li><a href="#"><img src="../images/github.png" alt="twiter" width="30" height="30"/></a></li>
+                                 <li><a href="https://twitter.com/"><img src="../images/twiter.png" alt="twiter" width="30" height="30"/></a></li>
+                            <li><a href="https://facebook.com"><img src="../images/facebook.png" alt="twiter" width="30" height="30"/></a></li>
+                            <li><a href="https://instagram.com"><img src="../images/instagram.png" alt="twiter" width="30" height="30"/></a></li>
+                            <li><a href="https://github.com/falkon33/23_24-LEMA-PROYECTOXML-ALVAREZ"><img src="../images/github.png" alt="twiter" width="30" height="30"/></a></li>
                             </ul>
                             Unleash your imagination and create your own D&amp;D legacy!
                         </div>

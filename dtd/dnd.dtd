@@ -1,20 +1,31 @@
-<!ELEMENT dnd (characters,spels)>
+<!-- Define the root element "dnd" containing "characters" and "spels" -->
+<!ELEMENT dnd (characters, spels)>
+<!-- Define the "characters" element containing one or more "character" elements -->
 <!ELEMENT characters (character+)>
-<!ELEMENT character (class+,race,ac,hitpoints,proficiencies,spell_slot?,stats,features,inventory,img)>
-<!ATTLIST character level NMTOKEN #REQUIRED>
-<!ELEMENT class (name+,levels?)>
+<!-- Define the structure of an individual character -->
+<!ELEMENT character (class+, race, ac, hitpoints, proficiencies, spell_slot?, stats, features, inventory, img,link)>
+<!-- Define the attribute "level" for character with default value '1' -->
+<!ATTLIST character level NMTOKEN '1'>
+<!-- Define the required attribute "id" for character -->
+<!ATTLIST character id ID #REQUIRED>
+<!-- Define the "class" element containing "name" and optional "levels" -->
+<!ELEMENT class (name+, levels?)>
+<!-- Define the "name" element as parsed character data -->
 <!ELEMENT name (#PCDATA)>
+<!-- Define the "levels" element as parsed character data -->
 <!ELEMENT levels (#PCDATA)>
+<!-- Define elements for character attributes -->
 <!ELEMENT race (#PCDATA)>
 <!ELEMENT ac (#PCDATA)>
 <!ELEMENT hitpoints (#PCDATA)>
-<!ELEMENT proficiencies (armor,weapon,tool,saving_throw,skill)>
+<!ELEMENT proficiencies (armor, weapon, tool, saving_throw, skill)>
 <!ELEMENT armor (#PCDATA)>
 <!ELEMENT weapon (#PCDATA)>
 <!ELEMENT tool (#PCDATA)>
 <!ELEMENT saving_throw (#PCDATA)>
 <!ELEMENT skill (#PCDATA)>
-<!ELEMENT spell_slot (lv1,lv2,lv3,lv4,lv5,lv6,lv7,lv8,lv9)>
+<!-- Define the optional "spell_slot" element with sub-elements for each spell level -->
+<!ELEMENT spell_slot (lv1, lv2, lv3, lv4, lv5, lv6, lv7, lv8, lv9)>
 <!ELEMENT lv1 (#PCDATA)>
 <!ELEMENT lv2 (#PCDATA)>
 <!ELEMENT lv3 (#PCDATA)>
@@ -24,21 +35,30 @@
 <!ELEMENT lv7 (#PCDATA)>
 <!ELEMENT lv8 (#PCDATA)>
 <!ELEMENT lv9 (#PCDATA)>
-<!ELEMENT stats (str,dex,con,int,wis,cha)>
+<!-- Define the "stats" element containing attributes for various statistics -->
+<!ELEMENT stats (str, dex, con, int, wis, cha)>
 <!ELEMENT str (#PCDATA)>
 <!ELEMENT dex (#PCDATA)>
 <!ELEMENT con (#PCDATA)>
 <!ELEMENT int (#PCDATA)>
 <!ELEMENT wis (#PCDATA)>
 <!ELEMENT cha (#PCDATA)>
+<!-- Define the "features" element containing one or more "feature" elements -->
 <!ELEMENT features (feature+)>
 <!ELEMENT feature (#PCDATA)>
+<!-- Define the "inventory" element containing zero or more "item" elements -->
 <!ELEMENT inventory (item*)>
 <!ELEMENT item (#PCDATA)>
+<!-- Define the "img" element as parsed character data -->
 <!ELEMENT img (#PCDATA)>
+<!-- Define the "link" element as parsed character data -->
+<!ELEMENT link (#PCDATA)>
+<!-- Define the "spels" element containing one or more "spell" elements -->
 <!ELEMENT spels (spell+)>
-<!ELEMENT spell (name,class,tags,cast,desc,price)>
-<!ATTLIST spell school NMTOKEN #REQUIRED>
+<!-- Define the "spell" element with attributes and sub-elements -->
+<!ELEMENT spell (name, class, tags, cast, desc, price,link)>
+<!ATTLIST spell school NMTOKEN #IMPLIED>
+<!ATTLIST spell id ID #REQUIRED>
 <!ELEMENT tags (tag*)>
 <!ELEMENT tag (#PCDATA)>
 <!ELEMENT cast (#PCDATA)>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	
-	<!-- Se define una variable "almacenXml" para obtener los datos almacenados en el archivo dnd.xml -->
+	<!-- Se define una variable "dnd" para obtener los datos almacenados en el archivo dnd.xml -->
 	<xsl:variable name="dnd" select="document('../xml/dnd.xml')"/>
 
 	<xsl:template match="name">
@@ -11,7 +11,7 @@
     <xsl:template match="/">
     <html lang="es">
         <head>
-            <title>UD6: Proyecto dirigido a la validación, formateo y transformación de documentos XML</title>
+            <title>Spels</title>
             <meta charset="utf-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
             <link rel="stylesheet" href="../css/main.css" />
@@ -27,6 +27,7 @@
                         <a href="catalogo1.xml">Characters</a>
                         <a href="catalogo2.xml">Spels</a>
                         <a href="catalogo3.xml">Prices</a>
+                        <a href="catalogo4.xml">List</a>
                         <a href="contacto.html">Contact</a>
                     </nav>
                 </div>
@@ -47,20 +48,22 @@
                                     </th>
                                     <!-- Add a new cell for the price element -->
                                     <td>
-                                        <h4>Price: <xsl:value-of select="price"/></h4>
+                                        <h4 class="right">Price: <xsl:value-of select="format-number(price * 1.21, '#.##')"/>SP</h4>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
                                         <h4><a href="https://www.dndbeyond.com/spells/school/{@school}"><img class="sqr" width="25" src="../images/{@school}.png"/></a><xsl:value-of select="@school"/></h4>
                                     </td>
+                                    <!-- la duracion del conjuro -->
                                     <td class="right">
-                                        <h4>cast: <span class="black"><xsl:value-of select="cast"/></span></h4>
+                                        <h4>duration: <span class="black"><xsl:value-of select="cast"/></span></h4>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td><p><xsl:value-of select="desc"/></p></td>
                                 </tr>
+                                <!-- clases que pueden lanzar el conjuro -->
                                 <tr>
                                     <td class="left">
                                         <h5>Classes:
@@ -69,6 +72,7 @@
                                             </xsl:for-each>
                                         </h5>
                                     </td>
+                                    <!-- tag -->
                                     <td class="right">
                                         <h5>
                                             <xsl:for-each select="tags/tag">
@@ -80,7 +84,6 @@
                             </table>
                         </xsl:for-each>
                     </header>
-                    <!-- Poner codigo aqui -->
                 </div>
             </section>
 
@@ -90,10 +93,10 @@
                     <div class="copyright">
                         2024 DyD Sami , Aketza , Dani
                         <ul class="icons">
-                            <li><a href="#"><img src="../images/twiter.png" alt="twiter" width="30" height="30"/></a></li>
-                            <li><a href="#"><img src="../images/facebook.png" alt="twiter" width="30" height="30"/></a></li>
-                            <li><a href="#"><img src="../images/instagram.png" alt="twiter" width="30" height="30"/></a></li>
-                            <li><a href="#"><img src="../images/github.png" alt="twiter" width="30" height="30"/></a></li>
+                            <li><a href="https://twitter.com/"><img src="../images/twiter.png" alt="twiter" width="30" height="30"/></a></li>
+                            <li><a href="https://facebook.com"><img src="../images/facebook.png" alt="twiter" width="30" height="30"/></a></li>
+                            <li><a href="https://instagram.com"><img src="../images/instagram.png" alt="twiter" width="30" height="30"/></a></li>
+                            <li><a href="https://github.com/falkon33/23_24-LEMA-PROYECTOXML-ALVAREZ"><img src="../images/github.png" alt="twiter" width="30" height="30"/></a></li>
                         </ul>
                         Unleash your imagination and create your own D&amp;D legacy!
                     </div>

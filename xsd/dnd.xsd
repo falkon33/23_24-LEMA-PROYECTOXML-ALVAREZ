@@ -3,12 +3,14 @@
     <xs:element name="dnd">
         <xs:complexType>
             <xs:sequence>
+                <!-- personajes -->
                 <xs:element name="characters">
                     <xs:complexType>
                         <xs:sequence>
                             <xs:element name="character" maxOccurs="unbounded">
                                 <xs:complexType>
                                     <xs:sequence>
+                                        <!-- clases -->
                                         <xs:element name="class" maxOccurs="unbounded">
                                             <xs:complexType>
                                                 <xs:sequence>
@@ -17,12 +19,14 @@
                                                 </xs:sequence>
                                             </xs:complexType>
                                         </xs:element>
+                                        <!-- elementos principales -->
                                         <xs:element name="race"/>
                                         <xs:element name="ac" type="xs:integer" />
                                         <xs:element name="hitpoints" type="xs:integer" />
                                         <xs:element name="proficiencies">
                                             <xs:complexType>
                                                 <xs:sequence>
+                                                    <!-- competencias -->
                                                     <xs:element name="armor" type="xs:string" />
                                                     <xs:element name="weapon" type="xs:string" />
                                                     <xs:element name="tool" type="xs:string" />
@@ -31,6 +35,7 @@
                                                 </xs:sequence>
                                             </xs:complexType>
                                         </xs:element>
+                                        <!-- espacios de conjuro (opcional) -->
                                         <xs:element name="spell_slot" minOccurs="0">
                                             <xs:complexType>
                                                 <xs:sequence>
@@ -47,17 +52,61 @@
                                             </xs:complexType>
                                         </xs:element>
                                         <xs:element name="stats">
+                                            <!-- estadisticas -->
                                             <xs:complexType>
                                                 <xs:sequence>
-                                                    <xs:element name="str" type="xs:integer" />
-                                                    <xs:element name="dex" type="xs:integer" />
-                                                    <xs:element name="con" type="xs:integer" />
-                                                    <xs:element name="int" type="xs:integer" />
-                                                    <xs:element name="wis" type="xs:integer" />
-                                                    <xs:element name="cha" type="xs:integer" />
+                                                    <xs:element name="str">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:integer">
+                                                                <xs:minInclusive value="8" />
+                                                                <xs:maxInclusive value="20" />
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                    <xs:element name="dex">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:integer">
+                                                                <xs:minInclusive value="8" />
+                                                                <xs:maxInclusive value="20" />
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                    <xs:element name="con">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:integer">
+                                                                <xs:minInclusive value="8" />
+                                                                <xs:maxInclusive value="20" />
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                    <xs:element name="int">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:integer">
+                                                                <xs:minInclusive value="8" />
+                                                                <xs:maxInclusive value="20" />
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                    <xs:element name="wis">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:integer">
+                                                                <xs:minInclusive value="8" />
+                                                                <xs:maxInclusive value="20" />
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                    <xs:element name="cha">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:integer">
+                                                                <xs:minInclusive value="8" />
+                                                                <xs:maxInclusive value="20" />
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
                                                 </xs:sequence>
                                             </xs:complexType>
-                                        </xs:element>
+                                        </xs:element> 
+                                        <!-- dotes -->
                                         <xs:element name="features">
                                             <xs:complexType>
                                                 <xs:sequence>
@@ -65,6 +114,7 @@
                                                 </xs:sequence>
                                             </xs:complexType>
                                         </xs:element>
+                                        <!-- objetos -->
                                         <xs:element name="inventory">
                                             <xs:complexType>
                                                 <xs:sequence>
@@ -73,19 +123,31 @@
                                             </xs:complexType>
                                         </xs:element>
                                         <xs:element name="img" type="xs:string"/>
+                                        <xs:element name="link" type="xs:string"/>
                                     </xs:sequence>
+                                    <!-- atributos de xml -->
                                     <xs:attribute name="level" type="xs:integer" use="required" />
+                                    <xs:attribute name="id" type="xs:ID" use="required">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:ID">
+                                                <xs:pattern value="b[0-9]+"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:attribute>
+                                    
                                 </xs:complexType>
                             </xs:element>
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
+                <!-- conjuros -->
                 <xs:element name="spels">
                     <xs:complexType>
                         <xs:sequence>
                             <xs:element name="spell" maxOccurs="unbounded">
                                 <xs:complexType>
                                     <xs:sequence>
+                                        <!-- nombre y quien puede lanzarlo -->
                                         <xs:element name="name" type="xs:string" />
                                         <xs:element name="class">
                                             <xs:complexType>
@@ -94,6 +156,7 @@
                                                 </xs:sequence>
                                             </xs:complexType>
                                         </xs:element>
+                                        <!-- tipo -->
                                         <xs:element name="tags">
                                             <xs:complexType>
                                                 <xs:sequence>
@@ -101,11 +164,21 @@
                                                 </xs:sequence>
                                             </xs:complexType>    
                                         </xs:element>
+                                        <!-- datos importantes -->
                                         <xs:element name="cast" type="xs:string" />
                                         <xs:element name="desc" type="xs:string" />
                                         <xs:element name="price" type="xs:decimal"/>
+                                        <xs:element name="link" type="xs:string"/>
                                     </xs:sequence>
+                                    <!-- atributos de xml -->
                                     <xs:attribute name="school" use="required" />
+                                    <xs:attribute name="id" type="xs:ID" use="required">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:ID">
+                                                <xs:pattern value="a[0-9]+"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:attribute>
                                 </xs:complexType>
                             </xs:element>
                         </xs:sequence>

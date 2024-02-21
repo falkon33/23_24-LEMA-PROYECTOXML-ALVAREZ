@@ -31,6 +31,10 @@
 	color: rgb(68, 0, 0);
 }
 
+.green{
+	color: rgb(0, 68, 0);
+}
+
 /* Reset CSS */
 html,
 body,
